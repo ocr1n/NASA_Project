@@ -41,7 +41,7 @@ Our contribution is the connected, inspectable workflow: **measurement → perso
 
 ## Explore
 
-[30-second, three-person script](DEMO_SCRIPT.md) · [Architecture](docs/ARCHITECTURE.md) · [Validation](docs/DATA_VALIDATION.md) · [Verification](docs/VERIFICATION.md) · [Sources](docs/DATA_SOURCES.md) · [Data dictionary](docs/DATA_DICTIONARY.md)
+[Architecture](docs/ARCHITECTURE.md) · [Validation](docs/DATA_VALIDATION.md) · [Verification](docs/VERIFICATION.md) · [Sources](docs/DATA_SOURCES.md) · [Data dictionary](docs/DATA_DICTIONARY.md)
 
 Live sensors, ECG image/PDF/raw-waveform analysis, operational medical rules, backend synchronization and individualized anatomy are outside this build. Public ECG research remains separate from fictional crew data.
 
