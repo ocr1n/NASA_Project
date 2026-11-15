@@ -1,0 +1,45 @@
+.progress-card .card-head{border-bottom:1px solid var(--hair)}
+.progress-body{display:grid;grid-template-columns:auto minmax(0,1fr);gap:20px;align-items:center;padding:16px 18px;border-bottom:1px solid var(--hair)}
+.dial-wrap{display:flex;align-items:center;gap:14px}
+.dial{width:84px;height:84px;flex:none}
+.dial circle{fill:none;stroke-width:3}
+.dial-track{stroke:#e6e6e0}
+.dial-value{stroke:var(--accent);stroke-linecap:butt;transform:rotate(-90deg);transform-origin:60px 60px;transition:stroke-dasharray .5s ease}
+.dial-day{fill:var(--ink);font-family:var(--mono);font-size:30px;text-anchor:middle;dominant-baseline:middle}
+.dial-caption{fill:var(--dim);font-size:8px;letter-spacing:.12em;text-anchor:middle}
+.dial-note{font-size:12px;color:var(--muted);margin:0;max-width:16ch}
+.dial-note strong{display:block;font-family:var(--mono);font-size:20px;color:var(--ink);font-weight:500}
+.week-strip{display:grid;gap:6px}
+.week{list-style:none;display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:4px;margin:0;padding:0}
+.week li{display:grid;place-items:center;gap:1px;padding:6px 0;border:1px solid var(--hair);border-radius:2px;color:#a5a79f;font-size:10px}
+.week li.on{border-color:var(--accent-line);background:var(--accent-soft);color:var(--accent)}
+.week li small{font-family:var(--mono);font-size:9px;color:var(--dim)}
+.week li[data-today]{box-shadow:inset 0 0 0 1px var(--ink)}
+.objective{padding:14px 18px;border-bottom:1px solid var(--hair);display:grid;gap:4px;background:#fbfbf9}
+.objective-state{font-size:15px;font-weight:500}
+.objective p{font-size:12px;color:var(--muted)}
+.milestones{list-style:none;margin:0;padding:8px 18px 14px;display:grid;gap:2px}
+.milestones li{display:grid;grid-template-columns:16px minmax(0,1fr);gap:8px;align-items:start;padding:7px 0;border-bottom:1px solid var(--hair)}
+.milestones li:last-child{border-bottom:0}
+.milestones strong{display:block;font-size:12px;font-weight:500;color:var(--muted)}
+.milestones small{display:block;font-size:11px;color:var(--dim)}
+.milestones li.earned strong{color:var(--ink)}
+.milestones li.earned small{color:var(--accent)}
+.check{font-family:var(--mono);font-size:11px;color:#b4b6ae;line-height:1.7}
+.milestones li.earned .check{color:var(--accent)}
+
+.log-card .card-head{border-bottom:0;padding-bottom:6px}
+.log-list{list-style:none;margin:0;padding:0 18px;max-height:420px;overflow:auto}
+.log-list li{display:grid;grid-template-columns:8px minmax(0,1fr) auto;gap:12px;align-items:start;padding:11px 0;border-top:1px solid var(--hair)}
+.log-dot{width:5px;height:5px;background:var(--hair-strong);margin-top:8px;border-radius:50%}
+.log-capture .log-dot{background:var(--accent)}
+.log-reference .log-dot{background:#3d6f8a}
+.log-finding .log-dot{background:var(--warn)}
+.log-task .log-dot{background:var(--ink)}
+.log-list .meta{display:block;margin-bottom:1px}
+.log-list strong{display:block;font-size:13px;font-weight:500}
+.log-list small{display:block;font-size:11px;color:var(--dim);overflow-wrap:anywhere}
+.log-list time{font-family:var(--mono);font-size:11px;color:var(--dim);white-space:nowrap;text-align:right}
+.log-list time small{font-size:9px;letter-spacing:.1em}
+.log-empty{padding:18px;font-size:13px;color:var(--muted)}
+@media(max-width:560px){.progress-body{grid-template-columns:1fr}.dial-wrap{justify-content:flex-start}.log-list li{grid-template-columns:8px minmax(0,1fr)}.log-list time{grid-column:2;text-align:left}}

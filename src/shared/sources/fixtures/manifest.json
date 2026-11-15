@@ -1,0 +1,86 @@
+{
+  "schemaVersion": "0.1.0",
+  "retrievedAt": "2026-11-14T22:18:18.745Z",
+  "note": "Byte-exact excerpts are selected header and complete records in ECG-ID order; full files unchanged. No assay results.",
+  "files": [
+    {
+      "id": "osd575",
+      "file": "osd575-metadata.json",
+      "url": "https://visualization.osdr.nasa.gov/biodata/api/v2/dataset/OSD-575/?format=json",
+      "sha256": "1b48ae38ac31d37929d5dbcc922794929af002023bbf432de16737fb5d3f3dab",
+      "bytes": 9464,
+      "upstreamSha256": "1b48ae38ac31d37929d5dbcc922794929af002023bbf432de16737fb5d3f3dab",
+      "upstreamBytes": 9464,
+      "selectedEcgIds": null
+    },
+    {
+      "id": "osd575files",
+      "file": "osd575-files.json",
+      "url": "https://visualization.osdr.nasa.gov/biodata/api/v2/dataset/OSD-575/files/?format=json",
+      "sha256": "ea18e722762c2ab3470f00bf213486f535e101527965e7b2105ad4bef499d1aa",
+      "bytes": 3149,
+      "upstreamSha256": "ea18e722762c2ab3470f00bf213486f535e101527965e7b2105ad4bef499d1aa",
+      "upstreamBytes": 3149,
+      "selectedEcgIds": null
+    },
+    {
+      "id": "ptbecgdeli",
+      "file": "ecgdeli.csv",
+      "url": "https://physionet.org/files/ptb-xl-plus/1.0.1/features/ecgdeli_features.csv",
+      "sha256": "f365a31e86923a830445f7d8d6b93b700e00a0f2dd38a645d89631e566bb4ff0",
+      "bytes": 13019,
+      "upstreamSha256": "84143735682f727201cc7f2825c047f98898f9756c6a21729af993b516221556",
+      "upstreamBytes": 62235868,
+      "selectedEcgIds": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "ptbunig",
+      "file": "unig.csv",
+      "url": "https://physionet.org/files/ptb-xl-plus/1.0.1/features/unig_features.csv",
+      "sha256": "e2a8797c9962a8487547ddaa42bafa1cba44c1117e9a09267abcbd483f0df238",
+      "bytes": 16844,
+      "upstreamSha256": "f95ab01df5c9ed329485fd811578f0c39eabb0667a36ec37c7dda427d9d8f5a5",
+      "upstreamBytes": 92217519,
+      "selectedEcgIds": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "ptbparent",
+      "file": "parent.csv",
+      "url": "https://physionet.org/files/ptb-xl/1.0.3/ptbxl_database.csv",
+      "sha256": "b5a360c82599fd3dd546d8edb3c14512d696e3dee46f3ccc3e30bf3a2a413fad",
+      "bytes": 779,
+      "upstreamSha256": "7600de9c1b27d181d850b3c6038a35d7c3ddb6bb33b702e3a20252a6859d216b",
+      "upstreamBytes": 6594879,
+      "selectedEcgIds": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "ptbdescription",
+      "file": "feature-description.csv",
+      "url": "https://physionet.org/files/ptb-xl-plus/1.0.1/features/feature_description.csv",
+      "sha256": "5d8358c3b1ec7315adadc4b6dfe9f25a6f9a7c1a870e8ccb911bc59c662eed3b",
+      "bytes": 18772,
+      "upstreamSha256": "5d8358c3b1ec7315adadc4b6dfe9f25a6f9a7c1a870e8ccb911bc59c662eed3b",
+      "upstreamBytes": 18772,
+      "selectedEcgIds": null
+    },
+    {
+      "id": "ptblicense",
+      "file": "LICENSE-PTB.txt",
+      "url": "https://physionet.org/files/ptb-xl-plus/1.0.1/LICENSE.txt",
+      "sha256": "9a78e7f22742dde9f66ae235ec793ba2212019dc4d0ced75c4da09ced0b35fb2",
+      "bytes": 14842,
+      "upstreamSha256": "9a78e7f22742dde9f66ae235ec793ba2212019dc4d0ced75c4da09ced0b35fb2",
+      "upstreamBytes": 14842,
+      "selectedEcgIds": null
+    }
+  ]
+}

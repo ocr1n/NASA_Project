@@ -1,0 +1,25 @@
+.collection-panel{overflow:hidden}
+.collection-body{padding:14px 18px 18px}
+.collection-body p{font-size:12px;color:var(--muted)}
+.collection-body h3{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--dim);margin:16px 0 6px}
+.collection-slots{list-style:none;padding:0;margin:12px 0;display:grid;gap:6px}
+.collection-slots li{display:grid;gap:2px;border:1px solid var(--hair);border-left:2px solid var(--accent-line);padding:10px 12px;font-size:12px}
+.collection-slots li strong{font-size:12px;font-weight:500}
+.collection-slots li span,.collection-slots li small{color:var(--dim);overflow-wrap:anywhere;font-size:11px}
+.collection-slots button{justify-self:start;font-size:11px;padding:4px 8px;margin-top:4px}
+.collection-body form>fieldset{margin:12px 0;padding:0;border:0;min-width:0}
+.collection-body label{display:flex;flex-direction:column;gap:4px;font-size:11px;color:var(--muted);margin:8px 0}
+.collection-body input,.collection-body select,.collection-body textarea{width:100%;min-width:0}
+.collection-body .capture-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px 16px}
+.collection-body .capture-actions{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:12px}
+.collection-body .capture-actions .primary{width:auto}
+.collection-body .acquisition-fields{padding:10px 0}
+.collection-body .field-guidance{border-left:2px solid var(--hair);padding-left:10px;font-size:11px;color:var(--dim)}
+.collection-body .report-evidence{padding:10px 0;border-top:1px solid var(--hair)}
+.report-evidence dl div{flex-wrap:wrap}
+.report-evidence dd{overflow-wrap:anywhere;font-size:12px}
+.report-evidence pre{max-height:250px}
+.collection-body .catalogue-field{margin:10px 0;padding-top:8px;border-top:1px solid var(--hair)}
+.collection-body .catalogue-field a{display:block;font-size:11px}
+.collection-body details{overflow-wrap:anywhere;border:0;border-top:1px solid var(--hair);border-radius:0;padding:12px 0}
+@media(max-width:520px){.collection-body{padding:12px 14px 16px}.collection-body .capture-grid{grid-template-columns:1fr}.collection-body .capture-actions button{width:100%}}

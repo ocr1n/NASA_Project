@@ -1,0 +1,37 @@
+.demo-scenarios{overflow:hidden}
+.demo-scenarios .card-head,.demo-scenarios .history-heading{padding:16px 18px;border-bottom:1px solid var(--hair)}
+.demo-scenarios details{border:0;border-top:1px solid var(--hair);border-radius:0;padding:12px 18px}
+.demo-examples{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;margin:10px 0}
+.demo-examples>div{display:flex;flex-direction:column;gap:2px}
+.demo-examples button{text-align:left;font-size:12px;border:1px solid var(--hair);border-radius:2px;background:var(--surface);padding:7px 9px}
+.demo-examples button:hover{border-color:var(--ink);background:#fbfbf9}
+.demo-examples a{font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--dim);text-decoration:none}
+.demo-examples a:hover{color:var(--ink)}
+.demo-file{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:12px;color:var(--muted);margin-top:8px}
+.demo-active{padding:14px 18px}
+.demo-active h3{font-size:15px;margin:0 0 2px}
+.demo-active>p{font-size:12px;color:var(--muted)}
+.demo-finding{padding:10px 12px;border:1px solid var(--hair);border-left:2px solid var(--hair-strong);margin:10px 0;border-radius:2px}
+.demo-finding strong{display:block;font-size:13px}
+.demo-finding p{margin:3px 0 0;font-size:12px;color:var(--muted)}
+.demo-finding.demo-warning{border-left-color:var(--warn);background:#fdf8f2}
+.demo-finding.demo-watch{border-left-color:#9a7b45;background:#fcfaf5}
+.demo-finding.demo-cleared{border-left-color:var(--accent);background:var(--accent-soft)}
+.demo-comparison{font-size:12px;color:var(--muted)}
+.demo-step-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:10px}
+.demo-step-grid p,.demo-step-grid li{font-size:12px;color:var(--muted)}
+.demo-step-grid h3{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);margin-bottom:4px}
+.demo-step-grid small{display:block;color:var(--dim);font-size:11px}
+.demo-step-grid fieldset{border:1px solid var(--hair);border-radius:2px;margin:0;min-width:0;padding:10px 12px}
+.demo-step-grid legend{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--dim);padding:0 4px}
+.demo-step-grid label{display:flex;flex-direction:column;gap:4px;font-size:11px;color:var(--muted);margin:8px 0}
+.demo-step-grid select,.demo-step-grid textarea{width:100%;max-width:100%}
+.demo-step-grid ul{padding-left:16px}
+.demo-caption{margin:0;padding:12px 18px;font-size:12px;color:var(--dim)}
+.demo-active .button-row .primary{width:auto}
+.demo-active td{white-space:normal;overflow-wrap:anywhere}
+.atlas-finding-list{margin:0 0 12px;padding:10px 12px;border:1px solid var(--hair);border-left:2px solid var(--warn);background:#fdf8f2;font-size:12px}
+.atlas-finding-list p{margin:3px 0;color:var(--muted)}
+.finding-tag{display:inline-block;margin-left:6px;font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:#fff;background:var(--warn);padding:1px 4px;border-radius:2px}
+.atlas-evidence small{display:block;color:var(--dim)}
+@media(max-width:760px){.demo-examples{grid-template-columns:1fr}.demo-step-grid{grid-template-columns:1fr}}

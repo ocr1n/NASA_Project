@@ -1,0 +1,6 @@
+format,session_key,crew_id,activity,workload,protocol_id,time_precision,reported_time,time_reason,device_id,posture,metric,value,unit,missing_reason
+fictional-exercise/1,fictional-cycle-001,crew-a,cycling,steady 160 W,fictional-session-v1,exact,2026-01-10T10:00:00+05:00,,fictional-cycle,seated,exercise_duration,1200,s,
+fictional-exercise/1,fictional-cycle-001,crew-a,cycling,steady 160 W,fictional-session-v1,exact,2026-01-10T10:00:00+05:00,,fictional-cycle,seated,perceived_exertion,6,1,
+fictional-exercise/1,fictional-cycle-001,crew-a,cycling,steady 160 W,fictional-session-v1,exact,2026-01-10T10:00:00+05:00,,fictional-cycle,seated,exercise_mean_hr,120,/min,
+fictional-exercise/1,fictional-cycle-001,crew-a,cycling,steady 160 W,fictional-session-v1,exact,2026-01-10T10:00:00+05:00,,fictional-cycle,seated,exercise_peak_hr,140,/min,
+fictional-exercise/1,fictional-cycle-001,crew-a,cycling,steady 160 W,fictional-session-v1,exact,2026-01-10T10:00:00+05:00,,fictional-cycle,seated,cycling_power,160,W,

@@ -1,0 +1,44 @@
+{
+  "protocolVersion": "atlas-demo-input/1",
+  "crewId": "crew-a",
+  "scenarioId": "bone-uncertain",
+  "title": "Bone: uncertain quality, no highlight",
+  "description": "The same fictional low bone values have unknown/poor quality. The program asks for verification and a compatible repeat instead of painting the bone or declaring it healthy.",
+  "kind": "bone",
+  "initialCount": 2,
+  "reference": [
+    1.1,
+    1.11,
+    1.12
+  ],
+  "readings": [
+    {
+      "timestamp": "2026-01-10T13:00:00Z",
+      "value": 0.93,
+      "qualityScore": null,
+      "lowConfidence": true,
+      "site": "femur_left"
+    },
+    {
+      "timestamp": "2026-01-11T13:00:00Z",
+      "value": 0.92,
+      "qualityScore": 0.3,
+      "lowConfidence": true,
+      "site": "femur_left"
+    },
+    {
+      "timestamp": "2026-01-11T14:00:00Z",
+      "value": 1.1,
+      "qualityScore": 0.95,
+      "lowConfidence": false,
+      "site": "femur_left"
+    },
+    {
+      "timestamp": "2026-01-11T15:00:00Z",
+      "value": 1.11,
+      "qualityScore": 0.95,
+      "lowConfidence": false,
+      "site": "femur_left"
+    }
+  ]
+}

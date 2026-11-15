@@ -1,0 +1,44 @@
+{
+  "protocolVersion": "atlas-demo-input/1",
+  "crewId": "crew-a",
+  "scenarioId": "bone-recovery",
+  "title": "Bone: completed fictional recovery",
+  "description": "This file includes two initial changed reports and two subsequent compatible reports. It demonstrates a retained warning, repeat completion and then recovery; it does not prove a real bone condition or recovery rate.",
+  "kind": "bone",
+  "initialCount": 4,
+  "reference": [
+    1.1,
+    1.11,
+    1.12
+  ],
+  "readings": [
+    {
+      "timestamp": "2026-01-10T13:00:00Z",
+      "value": 0.93,
+      "qualityScore": 0.95,
+      "lowConfidence": false,
+      "site": "femur_left"
+    },
+    {
+      "timestamp": "2026-01-11T13:00:00Z",
+      "value": 0.92,
+      "qualityScore": 0.95,
+      "lowConfidence": false,
+      "site": "femur_left"
+    },
+    {
+      "timestamp": "2026-01-11T14:00:00Z",
+      "value": 1.08,
+      "qualityScore": 0.95,
+      "lowConfidence": false,
+      "site": "femur_left"
+    },
+    {
+      "timestamp": "2026-01-11T15:00:00Z",
+      "value": 1.1,
+      "qualityScore": 0.95,
+      "lowConfidence": false,
+      "site": "femur_left"
+    }
+  ]
+}

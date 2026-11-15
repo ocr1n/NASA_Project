@@ -1,0 +1,26 @@
+.ecg-panel{padding-bottom:16px;margin:0}
+.ecg-panel input,.ecg-panel select,.ecg-panel textarea{font:inherit;font-size:12px;width:auto}
+.ecg-panel>.capture-source{margin:12px 18px 8px}
+.ecg-panel>button[aria-expanded]{margin:0 18px 8px}
+.ecg-fields{border:1px solid var(--hair);border-radius:var(--radius);padding:14px;margin:12px 18px}
+.ecg-fields legend{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--dim);padding:0 4px}
+.ecg-value{display:grid;grid-template-columns:1.1fr 1fr .7fr 1.2fr;gap:12px;margin:8px 0;padding-bottom:10px;border-bottom:1px solid var(--hair)}
+.ecg-value label{display:flex;flex-direction:column;gap:4px;font-size:11px;color:var(--muted)}
+.ecg-value input,.ecg-value select{width:100%;min-width:0}
+.ecg-methods{margin-top:12px}
+.ecg-panel .form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 16px}
+.ecg-retained{margin:14px 18px 0}
+.ecg-retained h3{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--dim);margin:0 0 8px}
+.ecg-report{padding:12px 0;border-top:1px solid var(--hair);overflow-wrap:anywhere}
+.ecg-report h4{margin:0 0 4px;font-size:13px}
+.ecg-report p{margin:4px 0;font-size:12px;color:var(--muted)}
+.ecg-context{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:8px 0}
+.ecg-context div{display:grid;grid-template-columns:70px minmax(0,1fr);gap:8px;border-bottom:1px solid var(--hair);padding-bottom:4px}
+.ecg-context dt{color:var(--dim);font-size:10px;letter-spacing:.08em;text-transform:uppercase}
+.ecg-context dd{margin:0;font-size:12px}
+.ecg-report li{margin:8px 0;font-size:12px;color:var(--muted)}
+.ecg-report small{display:block;color:var(--dim);margin-top:2px;font-size:11px}
+.ecg-panel details{border:0;border-top:1px solid var(--hair);border-radius:0;padding:10px 0}
+.ecg-panel .form-actions{margin:12px 18px 0}
+@media(max-width:800px){.ecg-value,.ecg-panel .form-grid{grid-template-columns:1fr 1fr}.ecg-fields{margin:12px 14px}}
+@media(max-width:480px){.ecg-value,.ecg-context,.ecg-panel .form-grid{grid-template-columns:1fr}}

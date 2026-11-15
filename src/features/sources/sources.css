@@ -1,0 +1,15 @@
+.sources-panel{padding:16px 18px;font-size:12px;color:var(--muted)}
+.sources-panel h2{font-size:15px;margin:0 0 6px;color:var(--ink)}
+.sources-panel a{color:var(--accent);overflow-wrap:anywhere}
+.sources-panel details{padding:12px 0 0;border:0;border-top:1px solid var(--hair);border-radius:0}
+.sources-panel p{max-width:88ch;margin:6px 0}
+.sources-panel summary{color:var(--ink);font-weight:500}
+.source-ledger{padding-left:16px;font-size:12px}
+.source-ledger li{padding:8px 0;border-bottom:1px solid var(--hair)}
+.source-ledger strong,.source-ledger span{display:block}
+.source-ledger strong{color:var(--ink);font-size:12px;font-weight:500}
+.source-ledger span{font-size:11px;color:var(--dim)}
+.source-ledger p{font-size:11px;margin:3px 0}
+.sources-panel .table-scroll{margin-top:8px;border:1px solid var(--hair)}
+.sources-panel .table-scroll th{white-space:nowrap}
+@media(max-width:520px){.sources-panel{padding:12px 14px}}

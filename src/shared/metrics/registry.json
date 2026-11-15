@@ -1,0 +1,2615 @@
+{
+  "heart_rate": {
+    "schemaVersion": "0.1.0",
+    "namespace": "demo",
+    "recordType": "MetricDefinition",
+    "metric": "heart_rate",
+    "revision": 1,
+    "label": "heart rate",
+    "valueKinds": [
+      "number"
+    ],
+    "canonicalUnit": "/min",
+    "allowedInputUnits": [
+      "/min",
+      "bpm"
+    ],
+    "conversions": [
+      {
+        "inputUnit": "/min",
+        "factor": 1,
+        "offset": 0,
+        "evidenceURL": "https://ucum.org/ucum"
+      },
+      {
+        "inputUnit": "bpm",
+        "factor": 1,
+        "offset": 0,
+        "evidenceURL": "https://physionet.org/files/ptb-xl-plus/1.0.1/features/feature_description.csv"
+      }
+    ],
+    "category": "daily",
+    "requiredContext": [
+      "modality",
+      "deviceId",
+      "protocolId",
+      "method",
+      "posture"
+    ],
+    "missingValueBehavior": "explicit_reason",
+    "provenanceRequirements": [
+      "source",
+      "rawRecordId",
+      "method"
+    ],
+    "comparabilityKeys": [
+      "astronautId",
+      "metric",
+      "unit",
+      "context",
+      "modality",
+      "deviceId",
+      "protocolId",
+      "method",
+      "posture"
+    ],
+    "regionAssociations": [],
+    "definitionStatus": "pending",
+    "definitionEvidence": [],
+    "displayPrecision": 2
+  },
+  "sleep_duration": {
+    "schemaVersion": "0.1.0",
+    "namespace": "demo",
+    "recordType": "MetricDefinition",
+    "metric": "sleep_duration",
+    "revision": 1,
+    "label": "sleep duration",
+    "valueKinds": [
+      "number"
+    ],
+    "canonicalUnit": "h",
+    "allowedInputUnits": [
+      "h",
+      "min",
+      "s"
+    ],
+    "conversions": [
+      {
+        "inputUnit": "h",
+        "factor": 1,
+        "offset": 0,
+        "evidenceURL": "https://ucum.org/ucum"
+      },
+      {
+        "inputUnit": "min",
+        "factor": 0.016666666666666666,
+        "offset": 0,
+        "evidenceURL": "https://ucum.org/ucum"
+      },
+      {
+        "inputUnit": "s",
+        "factor": 0.0002777777777777778,
+        "offset": 0,
+        "evidenceURL": "https://ucum.org/ucum"
+      }
+    ],
+    "category": "daily",
+    "requiredContext": [
+      "method",
+      "intervalSeconds"
+    ],
+    "missingValueBehavior": "explicit_reason",
+    "provenanceRequirements": [
+      "source",
+      "rawRecordId",
+      "method"
+    ],
+    "comparabilityKeys": [
+      "astronautId",
+      "metric",
+      "unit",
+      "context",
+      "modality",
+      "deviceId",
+      "protocolId",
+      "method",
+      "posture",
+      "intervalSeconds"
+    ],
+    "regionAssociations": [],
+    "definitionStatus": "pending",
+    "definitionEvidence": [],
+    "displayPrecision": 2
+  },
+  "fatigue_rating": {
+    "schemaVersion": "0.1.0",
+    "namespace": "demo",
+    "recordType": "MetricDefinition",
+    "metric": "fatigue_rating",
+    "revision": 1,
+    "label": "fatigue rating",
+    "valueKinds": [
+      "number",
+      "coded"
+    ],
+    "canonicalUnit": "1",
+    "allowedInputUnits": [
+      "1"
+    ],
+    "conversions": [
+      {
+        "inputUnit": "1",
+        "factor": 1,
+        "offset": 0,
+        "evidenceURL": "https://ucum.org/ucum"
+      }
+    ],
+    "category": "daily",
+    "requiredContext": [
+      "scale"
+    ],
+    "missingValueBehavior": "explicit_reason",
+    "provenanceRequirements": [
+      "source",
+      "rawRecordId",
+      "method"
+    ],
+    "comparabilityKeys": [
+      "astronautId",
+      "metric",
+      "unit",
+      "context",
+      "modality",
+      "deviceId",
+      "protocolId",
+      "method",
+      "posture",
+      "scale"
+    ],
+    "regionAssociations": [],
+    "definitionStatus": "pending",
+    "definitionEvidence": [],
+    "displayPrecision": 2
+  },
+  "mood_rating": {
+    "schemaVersion": "0.1.0",
+    "namespace": "demo",
+    "recordType": "MetricDefinition",
+    "metric": "mood_rating",
+    "revision": 1,
+    "label": "mood rating",
+    "valueKinds": [
+      "number",
+      "coded"
+    ],
+    "canonicalUnit": "1",
+    "allowedInputUnits": [
+      "1"
+    ],
+    "conversions": [
+      {
+        "inputUnit": "1",
+        "factor": 1,
+        "offset": 0,
+        "evidenceURL": "https://ucum.org/ucum"
+      }
+    ],
+    "category": "daily",
+    "requiredContext": [
+      "scale"
+    ],
+    "missingValueBehavior": "explicit_reason",
+    "provenanceRequirements": [
+      "source",
+      "rawRecordId",
+      "method"
+    ],
+    "comparabilityKeys": [
+      "astronautId",
+      "metric",
+      "unit",
+      "context",
+      "modality",
+      "deviceId",
+      "protocolId",
+      "method",
+      "posture",
+      "scale"
+    ],
+    "regionAssociations": [],
+    "definitionStatus": "pending",
+    "definitionEvidence": [],
+    "displayPrecision": 2
+  },
+  "stress_rating": {
+    "schemaVersion": "0.1.0",
+    "namespace": "demo",
+    "recordType": "MetricDefinition",
+    "metric": "stress_rating",
+    "revision": 1,
+    "label": "stress rating",
+    "valueKinds": [
+      "number",
+      "coded"
+    ],
+    "canonicalUnit": "1",
+    "allowedInputUnits": [
+      "1"
+    ],
+    "conversions": [
+      {
+        "inputUnit": "1",
+        "factor": 1,
+        "offset": 0,
+        "evidenceURL": "https://ucum.org/ucum"
+      }
+    ],
+    "category": "daily",
+    "requiredContext": [
+      "scale"
+    ],
+    "missingValueBehavior": "explicit_reason",
+    "provenanceRequirements": [
+      "source",
+      "rawRecordId",
+      "method"
+    ],
+    "comparabilityKeys": [
+      "astronautId",
+      "metric",
+      "unit",
+      "context",
+      "modality",
+      "deviceId",
+      "protocolId",
+      "method",
+      "posture",
+      "scale"
+    ],
+    "regionAssociations": [],
+    "definitionStatus": "pending",
+    "definitionEvidence": [],
+    "displayPrecision": 2
+  },
+  "respiratory_rate": {
+    "schemaVersion": "0.1.0",
+    "namespace": "demo",
+    "recordType": "MetricDefinition",
+    "metric": "respiratory_rate",
+    "revision": 1,
+    "label": "respiratory rate",
+    "valueKinds": [
+      "number"
+    ],
+    "canonicalUnit": "/min",
+    "allowedInputUnits": [
+      "/min"
+    ],
+    "conversions": [
+      {
+        "inputUnit": "/min",
+        "factor": 1,
+        "offset": 0,
+        "evidenceURL": "https://ucum.org/ucum"
+      }
+    ],
+    "category": "additional",
+    "requiredContext": [
+      "method",
+      "activity",
+      "intervalSeconds"
+    ],
+    "missingValueBehavior": "explicit_reason",
+    "provenanceRequirements": [
+      "source",
+      "rawRecordId",
+      "method"
+    ],
+    "comparabilityKeys": [
+      "astronautId",
+      "metric",
+      "unit",
+      "context",
+      "modality",
+      "deviceId",
+      "protocolId",
+      "method",
+      "posture",
+      "activity",
+      "intervalSeconds"
+    ],
+    "regionAssociations": [],
+    "definitionStatus": "pending",
+    "definitionEvidence": [],
+    "displayPrecision": 2
+  },
+  "body_temperature": {
+    "schemaVersion": "0.1.0",
+    "namespace": "demo",
+    "recordType": "MetricDefinition",
+    "metric": "body_temperature",
+    "revision": 1,
+    "label": "body temperature",
+    "valueKinds": [
+      "number"
+    ],
+    "canonicalUnit": "Cel",
+    "allowedInputUnits": [
+      "Cel"
+    ],
+    "conversions": [
+      {
+        "inputUnit": "Cel",
+        "factor": 1,
+        "offset": 0,
+        "evidenceURL": "https://ucum.org/ucum"
+      }
+    ],
+    "category": "additional",
+    "requiredContext": [
+      "site",
+      "deviceId"
+    ],
+    "missingValueBehavior": "explicit_reason",
+    "provenanceRequirements": [
+      "source",
+      "rawRecordId",
+      "method"
+    ],
+    "comparabilityKeys": [
+      "astronautId",
+      "metric",
+      "unit",
+      "context",
+      "modality",
+      "deviceId",
+      "protocolId",
+      "method",
+      "posture",
+      "site"
+    ],
+    "regionAssociations": [],
+    "definitionStatus": "pending",
+    "definitionEvidence": [],
+    "displayPrecision": 2
+  },
+  "bp_systolic": {
+    "schemaVersion": "0.1.0",
+    "namespace": "demo",
+    "recordType": "MetricDefinition",
+    "metric": "bp_systolic",
+    "revision": 1,
+    "label": "bp systolic",
+    "valueKinds": [
+      "number"
+    ],
+    "canonicalUnit": "mm[Hg]",
+    "allowedInputUnits": [
+      "mm[Hg]"
+    ],
+    "conversions": [
+      {
+        "inputUnit": "mm[Hg]",
+        "factor": 1,
+        "offset": 0,
+        "evidenceURL": "https://ucum.org/ucum"
+      }
+    ],
+    "category": "additional",
+    "requiredContext": [
+      "deviceId",
+      "posture",
+      "protocolId",
+      "acquisitionId"
+    ],
+    "missingValueBehavior": "explicit_reason",
+    "provenanceRequirements": [
+      "source",
+      "rawRecordId",
+      "method"
+    ],
+    "comparabilityKeys": [
+      "astronautId",
+      "metric",
+      "unit",
+      "context",
+      "modality",
+      "deviceId",
+      "protocolId",
+      "method",
+      "posture"
+    ],
+    "regionAssociations": [],
+    "definitionStatus": "pending",
+    "definitionEvidence": [],
+    "displayPrecision": 2
+  },
+  "bp_diastolic": {
+    "schemaVersion": "0.1.0",
+    "namespace": "demo",
+    "recordType": "MetricDefinition",
+    "metric": "bp_diastolic",
+    "revision": 1,
+    "label": "bp diastolic",
+    "valueKinds": [
+      "number"
+    ],
+    "canonicalUnit": "mm[Hg]",
+    "allowedInputUnits": [
+      "mm[Hg]"
+    ],
+    "conversions": [
+      {
+        "inputUnit": "mm[Hg]",
+        "factor": 1,
+        "offset": 0,
+        "evidenceURL": "https://ucum.org/ucum"
+      }
+    ],
+    "category": "additional",
+    "requiredContext": [
+      "deviceId",
+      "posture",
+      "protocolId",
+      "acquisitionId"
+    ],
+    "missingValueBehavior": "explicit_reason",
+    "provenanceRequirements": [
+      "source",
+      "rawRecordId",
+      "method"
+    ],
+    "comparabilityKeys": [
+      "astronautId",
+      "metric",
+      "unit",
+      "context",
+      "modality",
+      "deviceId",
+      "protocolId",
+      "method",
+      "posture"
+    ],
+    "regionAssociations": [],
+    "definitionStatus": "pending",
+    "definitionEvidence": [],
+    "displayPrecision": 2
+  },
+  "spo2": {
+    "schemaVersion": "0.1.0",
+    "namespace": "demo",
+    "recordType": "MetricDefinition",
+    "metric": "spo2",
+    "revision": 1,
+    "label": "spo2",
+    "valueKinds": [
+      "number"
+    ],
+    "canonicalUnit": "%",
+    "allowedInputUnits": [
+      "%"
+    ],
+    "conversions": [
+      {
+        "inputUnit": "%",
+        "factor": 1,
+        "offset": 0,
+        "evidenceURL": "https://ucum.org/ucum"
+      }
+    ],
+    "category": "additional",
+    "requiredContext": [
+      "deviceId",
+      "oxygenContext"
+    ],
+    "missingValueBehavior": "explicit_reason",
+    "provenanceRequirements": [
+      "source",
+      "rawRecordId",
+      "method"
+    ],
+    "comparabilityKeys": [
+      "astronautId",
+      "metric",
+      "unit",
+      "context",
+      "modality",
+      "deviceId",
+      "protocolId",
+      "method",
+      "posture",
+      "oxygenContext"
+    ],
+    "regionAssociations": [],
+    "definitionStatus": "pending",
+    "definitionEvidence": [],
+    "displayPrecision": 2
+  },
+  "blood_glucose": {
+    "schemaVersion": "0.1.0",
+    "namespace": "demo",
+    "recordType": "MetricDefinition",
+    "metric": "blood_glucose",
+    "revision": 1,
+    "label": "blood glucose",
+    "valueKinds": [
+      "number"
+    ],
+    "canonicalUnit": "mg/dL",
+    "allowedInputUnits": [
+      "mg/dL",
+      "mmol/L"
+    ],
+    "conversions": [
+      {
+        "inputUnit": "mg/dL",
+        "factor": 1,
+        "offset": 0,
+        "evidenceURL": "https://ucum.org/ucum"
+      },
+      {
+        "inputUnit": "mmol/L",
+        "factor": 18.02,
+        "offset": 0,
+        "evidenceURL": "https://wwwn.cdc.gov/nchs/data/nhanes/public/2015/labmethods/GLU_I_MET_C501.pdf"
+      }
+    ],
+    "category": "additional",
+    "requiredContext": [
+      "mealContext",
+      "method",
+      "analyte"
+    ],
+    "missingValueBehavior": "explicit_reason",
+    "provenanceRequirements": [
+      "source",
+      "rawRecordId",
+      "method"
+    ],
+    "comparabilityKeys": [
+      "astronautId",
+      "metric",
+      "unit",
+      "context",
+      "modality",
+      "deviceId",
+      "protocolId",
+      "method",
+      "posture",
+      "mealContext",
+      "analyte"
+    ],
+    "regionAssociations": [],
+    "definitionStatus": "pending",
+    "definitionEvidence": [],
+    "displayPrecision": 2
+  },
+  "body_mass": {
+    "schemaVersion": "0.1.0",
+    "namespace": "demo",
+    "recordType": "MetricDefinition",
+    "metric": "body_mass",
+    "revision": 1,
+    "label": "body mass",
+    "valueKinds": [
+      "number"
+    ],
+    "canonicalUnit": "kg",
+    "allowedInputUnits": [
+      "kg",
+      "g"
+    ],
+    "conversions": [
+      {
+        "inputUnit": "kg",
+        "factor": 1,
+        "offset": 0,
+        "evidenceURL": "https://ucum.org/ucum"
+      },
+      {
+        "inputUnit": "g",
+        "factor": 0.001,
+        "offset": 0,
+        "evidenceURL": "https://ucum.org/ucum"
+      }
+    ],
+    "category": "additional",
+    "requiredContext": [
+      "method",
+      "gravityCondition"
+    ],
+    "missingValueBehavior": "explicit_reason",
+    "provenanceRequirements": [
+      "source",
+      "rawRecordId",
+      "method"
+    ],
+    "comparabilityKeys": [
+      "astronautId",
+      "metric",
+      "unit",
+      "context",
+      "modality",
+      "deviceId",
+      "protocolId",
+      "method",
+      "posture",
+      "gravityCondition"
+    ],
+    "regionAssociations": [],
+    "definitionStatus": "pending",
+    "definitionEvidence": [],
+    "displayPrecision": 2
+  },
+  "body_height": {
+    "schemaVersion": "0.1.0",
+    "namespace": "demo",
+    "recordType": "MetricDefinition",
+    "metric": "body_height",
+    "revision": 1,
+    "label": "body height",
+    "valueKinds": [
+      "number"
+    ],
+    "canonicalUnit": "cm",
+    "allowedInputUnits": [
+      "cm",
+      "m",
+      "mm"
+    ],
+    "conversions": [
+      {
+        "inputUnit": "cm",
+        "factor": 1,
+        "offset": 0,
+        "evidenceURL": "https://ucum.org/ucum"
+      },
+      {
+        "inputUnit": "m",
+        "factor": 100,
+        "offset": 0,
+        "evidenceURL": "https://ucum.org/ucum"
+      },
+      {
+        "inputUnit": "mm",
+        "factor": 0.1,
+        "offset": 0,
+        "evidenceURL": "https://ucum.org/ucum"
+      }
+    ],
+    "category": "additional",
+    "requiredContext": [
+      "method"
+    ],
+    "missingValueBehavior": "explicit_reason",
+    "provenanceRequirements": [
+      "source",
+      "rawRecordId",
+      "method"
+    ],
+    "comparabilityKeys": [
+      "astronautId",
+      "metric",
+      "unit",
+      "context",
+      "modality",
+      "deviceId",
+      "protocolId",
+      "method",
+      "posture"
+    ],
+    "regionAssociations": [],
+    "definitionStatus": "pending",
+    "definitionEvidence": [],
+    "displayPrecision": 2
+  },
+  "ecg_pr": {
+    "schemaVersion": "0.1.0",
+    "namespace": "demo",
+    "recordType": "MetricDefinition",
+    "metric": "ecg_pr",
+    "revision": 1,
+    "label": "ecg pr",
+    "valueKinds": [
+      "number"
+    ],
+    "canonicalUnit": "ms",
+    "allowedInputUnits": [
+      "ms",
+      "s"
+    ],
+    "conversions": [
+      {
+        "inputUnit": "ms",
+        "factor": 1,
+        "offset": 0,
+        "evidenceURL": "https://ucum.org/ucum"
+      },
+      {
+        "inputUnit": "s",
+        "factor": 1000,
+        "offset": 0,
+        "evidenceURL": "https://ucum.org/ucum"
+      }
+    ],
+    "category": "cardiac",
+    "requiredContext": [
+      "lead",
+      "method",
+      "protocolId"
+    ],
+    "missingValueBehavior": "explicit_reason",
+    "provenanceRequirements": [
+      "source",
+      "rawRecordId",
+      "method"
+    ],
+    "comparabilityKeys": [
+      "astronautId",
+      "metric",
+      "unit",
+      "context",
+      "modality",
+      "deviceId",
+      "protocolId",
+      "method",
+      "posture",
+      "lead"
+    ],
+    "regionAssociations": [],
+    "definitionStatus": "pending",
+    "definitionEvidence": [],
+    "displayPrecision": 2
+  },
+  "ecg_qrs": {
+    "schemaVersion": "0.1.0",
+    "namespace": "demo",
+    "recordType": "MetricDefinition",
+    "metric": "ecg_qrs",
+    "revision": 1,
+    "label": "ecg qrs",
+    "valueKinds": [
+      "number"
+    ],
+    "canonicalUnit": "ms",
+    "allowedInputUnits": [
+      "ms",
+      "s"
+    ],
+    "conversions": [
+      {
+        "inputUnit": "ms",
+        "factor": 1,
+        "offset": 0,
+        "evidenceURL": "https://ucum.org/ucum"
+      },
+      {
+        "inputUnit": "s",
+        "factor": 1000,
+        "offset": 0,
+        "evidenceURL": "https://ucum.org/ucum"
+      }
+    ],
+    "category": "cardiac",
+    "requiredContext": [
+      "lead",
+      "method",
+      "protocolId"
+    ],
+    "missingValueBehavior": "explicit_reason",
+    "provenanceRequirements": [
+      "source",
+      "rawRecordId",
+      "method"
+    ],
+    "comparabilityKeys": [
+      "astronautId",
+      "metric",
+      "unit",
+      "context",
+      "modality",
+      "deviceId",
+      "protocolId",
+      "method",
+      "posture",
+      "lead"
+    ],
+    "regionAssociations": [],
+    "definitionStatus": "pending",
+    "definitionEvidence": [],
+    "displayPrecision": 2
+  },
+  "ecg_qt": {
+    "schemaVersion": "0.1.0",
+    "namespace": "demo",
+    "recordType": "MetricDefinition",
+    "metric": "ecg_qt",
+    "revision": 1,
+    "label": "ecg qt",
+    "valueKinds": [
+      "number"
+    ],
+    "canonicalUnit": "ms",
+    "allowedInputUnits": [
+      "ms",
+      "s"
+    ],
+    "conversions": [
+      {
+        "inputUnit": "ms",
+        "factor": 1,
+        "offset": 0,
+        "evidenceURL": "https://ucum.org/ucum"
+      },
+      {
+        "inputUnit": "s",
+        "factor": 1000,
+        "offset": 0,
+        "evidenceURL": "https://ucum.org/ucum"
+      }
+    ],
+    "category": "cardiac",
+    "requiredContext": [
+      "lead",
+      "method",
+      "protocolId"
+    ],
+    "missingValueBehavior": "explicit_reason",
+    "provenanceRequirements": [
+      "source",
+      "rawRecordId",
+      "method"
+    ],
+    "comparabilityKeys": [
+      "astronautId",
+      "metric",
+      "unit",
+      "context",
+      "modality",
+      "deviceId",
+      "protocolId",
+      "method",
+      "posture",
+      "lead"
+    ],
+    "regionAssociations": [],
+    "definitionStatus": "pending",
+    "definitionEvidence": [],
+    "displayPrecision": 2
+  },
+  "ecg_qtc": {
+    "schemaVersion": "0.1.0",
+    "namespace": "demo",
+    "recordType": "MetricDefinition",
+    "metric": "ecg_qtc",
+    "revision": 1,
+    "label": "ecg qtc",
+    "valueKinds": [
+      "number"
+    ],
+    "canonicalUnit": "ms",
+    "allowedInputUnits": [
+      "ms",
+      "s"
+    ],
+    "conversions": [
+      {
+        "inputUnit": "ms",
+        "factor": 1,
+        "offset": 0,
+        "evidenceURL": "https://ucum.org/ucum"
+      },
+      {
+        "inputUnit": "s",
+        "factor": 1000,
+        "offset": 0,
+        "evidenceURL": "https://ucum.org/ucum"
+      }
+    ],
+    "category": "cardiac",
+    "requiredContext": [
+      "lead",
+      "method",
+      "qtcCorrection"
+    ],
+    "missingValueBehavior": "explicit_reason",
+    "provenanceRequirements": [
+      "source",
+      "rawRecordId",
+      "method"
+    ],
+    "comparabilityKeys": [
+      "astronautId",
+      "metric",
+      "unit",
+      "context",
+      "modality",
+      "deviceId",
+      "protocolId",
+      "method",
+      "posture",
+      "lead",
+      "qtcCorrection"
+    ],
+    "regionAssociations": [],
+    "definitionStatus": "pending",
+    "definitionEvidence": [],
+    "displayPrecision": 2
+  },
+  "ecg_rr_irregularity": {
+    "schemaVersion": "0.1.0",
+    "namespace": "demo",
+    "recordType": "MetricDefinition",
+    "metric": "ecg_rr_irregularity",
+    "revision": 1,
+    "label": "ecg rr irregularity",
+    "valueKinds": [
+      "number",
+      "boolean"
+    ],
+    "canonicalUnit": "1",
+    "allowedInputUnits": [
+      "1"
+    ],
+    "conversions": [
+      {
+        "inputUnit": "1",
+        "factor": 1,
+        "offset": 0,
+        "evidenceURL": "https://ucum.org/ucum"
+      }
+    ],
+    "category": "cardiac",
+    "requiredContext": [
+      "statistic",
+      "method",
+      "windowSeconds"
+    ],
+    "missingValueBehavior": "explicit_reason",
+    "provenanceRequirements": [
+      "source",
+      "rawRecordId",
+      "method"
+    ],
+    "comparabilityKeys": [
+      "astronautId",
+      "metric",
+      "unit",
+      "context",
+      "modality",
+      "deviceId",
+      "protocolId",
+      "method",
+      "posture",
+      "statistic",
+      "windowSeconds"
+    ],
+    "regionAssociations": [],
+    "definitionStatus": "pending",
+    "definitionEvidence": [],
+    "displayPrecision": 2
+  },
+  "hrv_rmssd": {
+    "schemaVersion": "0.1.0",
+    "namespace": "demo",
+    "recordType": "MetricDefinition",
+    "metric": "hrv_rmssd",
+    "revision": 1,
+    "label": "hrv rmssd",
+    "valueKinds": [
+      "number"
+    ],
+    "canonicalUnit": "ms",
+    "allowedInputUnits": [
+      "ms",
+      "s"
+    ],
+    "conversions": [
+      {
+        "inputUnit": "ms",
+        "factor": 1,
+        "offset": 0,
+        "evidenceURL": "https://ucum.org/ucum"
+      },
+      {
+        "inputUnit": "s",
+        "factor": 1000,
+        "offset": 0,
+        "evidenceURL": "https://ucum.org/ucum"
+      }
+    ],
+    "category": "cardiac",
+    "requiredContext": [
+      "method",
+      "windowSeconds",
+      "artifactHandling"
+    ],
+    "missingValueBehavior": "explicit_reason",
+    "provenanceRequirements": [
+      "source",
+      "rawRecordId",
+      "method"
+    ],
+    "comparabilityKeys": [
+      "astronautId",
+      "metric",
+      "unit",
+      "context",
+      "modality",
+      "deviceId",
+      "protocolId",
+      "method",
+      "posture",
+      "windowSeconds",
+      "artifactHandling"
+    ],
+    "regionAssociations": [],
+    "definitionStatus": "pending",
+    "definitionEvidence": [],
+    "displayPrecision": 2
+  },
+  "hrv_sdnn": {
+    "schemaVersion": "0.1.0",
+    "namespace": "demo",
+    "recordType": "MetricDefinition",
+    "metric": "hrv_sdnn",
+    "revision": 1,
+    "label": "hrv sdnn",
+    "valueKinds": [
+      "number"
+    ],
+    "canonicalUnit": "ms",
+    "allowedInputUnits": [
+      "ms",
+      "s"
+    ],
+    "conversions": [
+      {
+        "inputUnit": "ms",
+        "factor": 1,
+        "offset": 0,
+        "evidenceURL": "https://ucum.org/ucum"
+      },
+      {
+        "inputUnit": "s",
+        "factor": 1000,
+        "offset": 0,
+        "evidenceURL": "https://ucum.org/ucum"
+      }
+    ],
+    "category": "cardiac",
+    "requiredContext": [
+      "method",
+      "windowSeconds",
+      "artifactHandling"
+    ],
+    "missingValueBehavior": "explicit_reason",
+    "provenanceRequirements": [
+      "source",
+      "rawRecordId",
+      "method"
+    ],
+    "comparabilityKeys": [
+      "astronautId",
+      "metric",
+      "unit",
+      "context",
+      "modality",
+      "deviceId",
+      "protocolId",
+      "method",
+      "posture",
+      "windowSeconds",
+      "artifactHandling"
+    ],
+    "regionAssociations": [],
+    "definitionStatus": "pending",
+    "definitionEvidence": [],
+    "displayPrecision": 2
+  },
+  "lvef": {
+    "schemaVersion": "0.1.0",
+    "namespace": "demo",
+    "recordType": "MetricDefinition",
+    "metric": "lvef",
+    "revision": 1,
+    "label": "lvef",
+    "valueKinds": [
+      "number"
+    ],
+    "canonicalUnit": "%",
+    "allowedInputUnits": [
+      "%"
+    ],
+    "conversions": [
+      {
+        "inputUnit": "%",
+        "factor": 1,
+        "offset": 0,
+        "evidenceURL": "https://ucum.org/ucum"
+      }
+    ],
+    "category": "cardiac",
+    "requiredContext": [
+      "view",
+      "method",
+      "reportId"
+    ],
+    "missingValueBehavior": "explicit_reason",
+    "provenanceRequirements": [
+      "source",
+      "rawRecordId",
+      "method"
+    ],
+    "comparabilityKeys": [
+      "astronautId",
+      "metric",
+      "unit",
+      "context",
+      "modality",
+      "deviceId",
+      "protocolId",
+      "method",
+      "posture",
+      "view"
+    ],
+    "regionAssociations": [],
+    "definitionStatus": "pending",
+    "definitionEvidence": [],
+    "displayPrecision": 2
+  },
+  "lv_edv": {
+    "schemaVersion": "0.1.0",
+    "namespace": "demo",
+    "recordType": "MetricDefinition",
+    "metric": "lv_edv",
+    "revision": 1,
+    "label": "lv edv",
+    "valueKinds": [
+      "number"
+    ],
+    "canonicalUnit": "mL",
+    "allowedInputUnits": [
+      "mL",
+      "L"
+    ],
+    "conversions": [
+      {
+        "inputUnit": "mL",
+        "factor": 1,
+        "offset": 0,
+        "evidenceURL": "https://ucum.org/ucum"
+      },
+      {
+        "inputUnit": "L",
+        "factor": 1000,
+        "offset": 0,
+        "evidenceURL": "https://ucum.org/ucum"
+      }
+    ],
+    "category": "cardiac",
+    "requiredContext": [
+      "view",
+      "method",
+      "indexing",
+      "reportId"
+    ],
+    "missingValueBehavior": "explicit_reason",
+    "provenanceRequirements": [
+      "source",
+      "rawRecordId",
+      "method"
+    ],
+    "comparabilityKeys": [
+      "astronautId",
+      "metric",
+      "unit",
+      "context",
+      "modality",
+      "deviceId",
+      "protocolId",
+      "method",
+      "posture",
+      "view",
+      "indexing"
+    ],
+    "regionAssociations": [],
+    "definitionStatus": "pending",
+    "definitionEvidence": [],
+    "displayPrecision": 2
+  },
+  "lv_esv": {
+    "schemaVersion": "0.1.0",
+    "namespace": "demo",
+    "recordType": "MetricDefinition",
+    "metric": "lv_esv",
+    "revision": 1,
+    "label": "lv esv",
+    "valueKinds": [
+      "number"
+    ],
+    "canonicalUnit": "mL",
+    "allowedInputUnits": [
+      "mL",
+      "L"
+    ],
+    "conversions": [
+      {
+        "inputUnit": "mL",
+        "factor": 1,
+        "offset": 0,
+        "evidenceURL": "https://ucum.org/ucum"
+      },
+      {
+        "inputUnit": "L",
+        "factor": 1000,
+        "offset": 0,
+        "evidenceURL": "https://ucum.org/ucum"
+      }
+    ],
+    "category": "cardiac",
+    "requiredContext": [
+      "view",
+      "method",
+      "indexing",
+      "reportId"
+    ],
+    "missingValueBehavior": "explicit_reason",
+    "provenanceRequirements": [
+      "source",
+      "rawRecordId",
+      "method"
+    ],
+    "comparabilityKeys": [
+      "astronautId",
+      "metric",
+      "unit",
+      "context",
+      "modality",
+      "deviceId",
+      "protocolId",
+      "method",
+      "posture",
+      "view",
+      "indexing"
+    ],
+    "regionAssociations": [],
+    "definitionStatus": "pending",
+    "definitionEvidence": [],
+    "displayPrecision": 2
+  },
+  "lv_edv_indexed": {
+    "schemaVersion": "0.1.0",
+    "namespace": "demo",
+    "recordType": "MetricDefinition",
+    "metric": "lv_edv_indexed",
+    "revision": 1,
+    "label": "lv edv indexed",
+    "valueKinds": [
+      "number"
+    ],
+    "canonicalUnit": "mL/m2",
+    "allowedInputUnits": [
+      "mL/m2",
+      "L/m2"
+    ],
+    "conversions": [
+      {
+        "inputUnit": "mL/m2",
+        "factor": 1,
+        "offset": 0,
+        "evidenceURL": "https://ucum.org/ucum"
+      },
+      {
+        "inputUnit": "L/m2",
+        "factor": 1000,
+        "offset": 0,
+        "evidenceURL": "https://ucum.org/ucum"
+      }
+    ],
+    "category": "cardiac",
+    "requiredContext": [
+      "view",
+      "method",
+      "indexing",
+      "reportId"
+    ],
+    "missingValueBehavior": "explicit_reason",
+    "provenanceRequirements": [
+      "source",
+      "rawRecordId",
+      "method"
+    ],
+    "comparabilityKeys": [
+      "astronautId",
+      "metric",
+      "unit",
+      "context",
+      "modality",
+      "deviceId",
+      "protocolId",
+      "method",
+      "posture",
+      "view",
+      "indexing"
+    ],
+    "regionAssociations": [],
+    "definitionStatus": "pending",
+    "definitionEvidence": [],
+    "displayPrecision": 2
+  },
+  "lv_esv_indexed": {
+    "schemaVersion": "0.1.0",
+    "namespace": "demo",
+    "recordType": "MetricDefinition",
+    "metric": "lv_esv_indexed",
+    "revision": 1,
+    "label": "lv esv indexed",
+    "valueKinds": [
+      "number"
+    ],
+    "canonicalUnit": "mL/m2",
+    "allowedInputUnits": [
+      "mL/m2",
+      "L/m2"
+    ],
+    "conversions": [
+      {
+        "inputUnit": "mL/m2",
+        "factor": 1,
+        "offset": 0,
+        "evidenceURL": "https://ucum.org/ucum"
+      },
+      {
+        "inputUnit": "L/m2",
+        "factor": 1000,
+        "offset": 0,
+        "evidenceURL": "https://ucum.org/ucum"
+      }
+    ],
+    "category": "cardiac",
+    "requiredContext": [
+      "view",
+      "method",
+      "indexing",
+      "reportId"
+    ],
+    "missingValueBehavior": "explicit_reason",
+    "provenanceRequirements": [
+      "source",
+      "rawRecordId",
+      "method"
+    ],
+    "comparabilityKeys": [
+      "astronautId",
+      "metric",
+      "unit",
+      "context",
+      "modality",
+      "deviceId",
+      "protocolId",
+      "method",
+      "posture",
+      "view",
+      "indexing"
+    ],
+    "regionAssociations": [],
+    "definitionStatus": "pending",
+    "definitionEvidence": [],
+    "displayPrecision": 2
+  },
+  "muscle_thickness": {
+    "schemaVersion": "0.1.0",
+    "namespace": "demo",
+    "recordType": "MetricDefinition",
+    "metric": "muscle_thickness",
+    "revision": 1,
+    "label": "muscle thickness",
+    "valueKinds": [
+      "number"
+    ],
+    "canonicalUnit": "mm",
+    "allowedInputUnits": [
+      "mm",
+      "cm",
+      "m"
+    ],
+    "conversions": [
+      {
+        "inputUnit": "mm",
+        "factor": 1,
+        "offset": 0,
+        "evidenceURL": "https://ucum.org/ucum"
+      },
+      {
+        "inputUnit": "cm",
+        "factor": 10,
+        "offset": 0,
+        "evidenceURL": "https://ucum.org/ucum"
+      },
+      {
+        "inputUnit": "m",
+        "factor": 1000,
+        "offset": 0,
+        "evidenceURL": "https://ucum.org/ucum"
+      }
+    ],
+    "category": "additional",
+    "requiredContext": [
+      "site",
+      "laterality",
+      "posture",
+      "protocolId"
+    ],
+    "missingValueBehavior": "explicit_reason",
+    "provenanceRequirements": [
+      "source",
+      "rawRecordId",
+      "method"
+    ],
+    "comparabilityKeys": [
+      "astronautId",
+      "metric",
+      "unit",
+      "context",
+      "modality",
+      "deviceId",
+      "protocolId",
+      "method",
+      "posture",
+      "site",
+      "laterality"
+    ],
+    "regionAssociations": [],
+    "definitionStatus": "pending",
+    "definitionEvidence": [],
+    "displayPrecision": 2
+  },
+  "bone_mineral_density": {
+    "schemaVersion": "0.1.0",
+    "namespace": "demo",
+    "recordType": "MetricDefinition",
+    "metric": "bone_mineral_density",
+    "revision": 1,
+    "label": "bone mineral density",
+    "valueKinds": [
+      "number"
+    ],
+    "canonicalUnit": "g/cm2",
+    "allowedInputUnits": [
+      "g/cm2"
+    ],
+    "conversions": [
+      {
+        "inputUnit": "g/cm2",
+        "factor": 1,
+        "offset": 0,
+        "evidenceURL": "https://ucum.org/ucum"
+      }
+    ],
+    "category": "additional",
+    "requiredContext": [
+      "site",
+      "laterality",
+      "modality",
+      "deviceId"
+    ],
+    "missingValueBehavior": "explicit_reason",
+    "provenanceRequirements": [
+      "source",
+      "rawRecordId",
+      "method"
+    ],
+    "comparabilityKeys": [
+      "astronautId",
+      "metric",
+      "unit",
+      "context",
+      "modality",
+      "deviceId",
+      "protocolId",
+      "method",
+      "posture",
+      "site",
+      "laterality"
+    ],
+    "regionAssociations": [],
+    "definitionStatus": "pending",
+    "definitionEvidence": [],
+    "displayPrecision": 2
+  },
+  "exercise_duration": {
+    "schemaVersion": "0.1.0",
+    "namespace": "demo",
+    "recordType": "MetricDefinition",
+    "metric": "exercise_duration",
+    "revision": 1,
+    "label": "exercise duration",
+    "valueKinds": [
+      "number"
+    ],
+    "canonicalUnit": "min",
+    "allowedInputUnits": [
+      "min",
+      "s"
+    ],
+    "conversions": [
+      {
+        "inputUnit": "min",
+        "factor": 1,
+        "offset": 0,
+        "evidenceURL": "https://ucum.org/ucum"
+      },
+      {
+        "inputUnit": "s",
+        "factor": 0.016666666666666666,
+        "offset": 0,
+        "evidenceURL": "https://ucum.org/ucum"
+      }
+    ],
+    "category": "exercise",
+    "requiredContext": [
+      "sessionId",
+      "activity"
+    ],
+    "missingValueBehavior": "explicit_reason",
+    "provenanceRequirements": [
+      "source",
+      "rawRecordId",
+      "method"
+    ],
+    "comparabilityKeys": [
+      "astronautId",
+      "metric",
+      "unit",
+      "context",
+      "modality",
+      "deviceId",
+      "protocolId",
+      "method",
+      "posture",
+      "activity"
+    ],
+    "regionAssociations": [],
+    "definitionStatus": "pending",
+    "definitionEvidence": [],
+    "displayPrecision": 2
+  },
+  "exercise_mean_hr": {
+    "schemaVersion": "0.1.0",
+    "namespace": "demo",
+    "recordType": "MetricDefinition",
+    "metric": "exercise_mean_hr",
+    "revision": 1,
+    "label": "exercise mean hr",
+    "valueKinds": [
+      "number"
+    ],
+    "canonicalUnit": "/min",
+    "allowedInputUnits": [
+      "/min"
+    ],
+    "conversions": [
+      {
+        "inputUnit": "/min",
+        "factor": 1,
+        "offset": 0,
+        "evidenceURL": "https://ucum.org/ucum"
+      }
+    ],
+    "category": "exercise",
+    "requiredContext": [
+      "sessionId",
+      "activity",
+      "workload",
+      "statistic"
+    ],
+    "missingValueBehavior": "explicit_reason",
+    "provenanceRequirements": [
+      "source",
+      "rawRecordId",
+      "method"
+    ],
+    "comparabilityKeys": [
+      "astronautId",
+      "metric",
+      "unit",
+      "context",
+      "modality",
+      "deviceId",
+      "protocolId",
+      "method",
+      "posture",
+      "activity",
+      "workload",
+      "statistic"
+    ],
+    "regionAssociations": [],
+    "definitionStatus": "pending",
+    "definitionEvidence": [],
+    "displayPrecision": 2
+  },
+  "exercise_peak_hr": {
+    "schemaVersion": "0.1.0",
+    "namespace": "demo",
+    "recordType": "MetricDefinition",
+    "metric": "exercise_peak_hr",
+    "revision": 1,
+    "label": "exercise peak hr",
+    "valueKinds": [
+      "number"
+    ],
+    "canonicalUnit": "/min",
+    "allowedInputUnits": [
+      "/min"
+    ],
+    "conversions": [
+      {
+        "inputUnit": "/min",
+        "factor": 1,
+        "offset": 0,
+        "evidenceURL": "https://ucum.org/ucum"
+      }
+    ],
+    "category": "exercise",
+    "requiredContext": [
+      "sessionId",
+      "activity",
+      "workload",
+      "statistic"
+    ],
+    "missingValueBehavior": "explicit_reason",
+    "provenanceRequirements": [
+      "source",
+      "rawRecordId",
+      "method"
+    ],
+    "comparabilityKeys": [
+      "astronautId",
+      "metric",
+      "unit",
+      "context",
+      "modality",
+      "deviceId",
+      "protocolId",
+      "method",
+      "posture",
+      "activity",
+      "workload",
+      "statistic"
+    ],
+    "regionAssociations": [],
+    "definitionStatus": "pending",
+    "definitionEvidence": [],
+    "displayPrecision": 2
+  },
+  "cycling_power": {
+    "schemaVersion": "0.1.0",
+    "namespace": "demo",
+    "recordType": "MetricDefinition",
+    "metric": "cycling_power",
+    "revision": 1,
+    "label": "cycling power",
+    "valueKinds": [
+      "number"
+    ],
+    "canonicalUnit": "W",
+    "allowedInputUnits": [
+      "W"
+    ],
+    "conversions": [
+      {
+        "inputUnit": "W",
+        "factor": 1,
+        "offset": 0,
+        "evidenceURL": "https://ucum.org/ucum"
+      }
+    ],
+    "category": "exercise",
+    "requiredContext": [
+      "sessionId",
+      "activity",
+      "workload",
+      "statistic"
+    ],
+    "missingValueBehavior": "explicit_reason",
+    "provenanceRequirements": [
+      "source",
+      "rawRecordId",
+      "method"
+    ],
+    "comparabilityKeys": [
+      "astronautId",
+      "metric",
+      "unit",
+      "context",
+      "modality",
+      "deviceId",
+      "protocolId",
+      "method",
+      "posture",
+      "activity",
+      "workload",
+      "statistic"
+    ],
+    "regionAssociations": [],
+    "definitionStatus": "pending",
+    "definitionEvidence": [],
+    "displayPrecision": 2
+  },
+  "perceived_exertion": {
+    "schemaVersion": "0.1.0",
+    "namespace": "demo",
+    "recordType": "MetricDefinition",
+    "metric": "perceived_exertion",
+    "revision": 1,
+    "label": "perceived exertion",
+    "valueKinds": [
+      "number",
+      "coded"
+    ],
+    "canonicalUnit": "1",
+    "allowedInputUnits": [
+      "1"
+    ],
+    "conversions": [
+      {
+        "inputUnit": "1",
+        "factor": 1,
+        "offset": 0,
+        "evidenceURL": "https://ucum.org/ucum"
+      }
+    ],
+    "category": "exercise",
+    "requiredContext": [
+      "sessionId",
+      "scale"
+    ],
+    "missingValueBehavior": "explicit_reason",
+    "provenanceRequirements": [
+      "source",
+      "rawRecordId",
+      "method"
+    ],
+    "comparabilityKeys": [
+      "astronautId",
+      "metric",
+      "unit",
+      "context",
+      "modality",
+      "deviceId",
+      "protocolId",
+      "method",
+      "posture",
+      "scale"
+    ],
+    "regionAssociations": [],
+    "definitionStatus": "pending",
+    "definitionEvidence": [],
+    "displayPrecision": 2
+  },
+  "vo2_relative": {
+    "schemaVersion": "0.1.0",
+    "namespace": "demo",
+    "recordType": "MetricDefinition",
+    "metric": "vo2_relative",
+    "revision": 1,
+    "label": "vo2 relative",
+    "valueKinds": [
+      "number"
+    ],
+    "canonicalUnit": "mL/(kg.min)",
+    "allowedInputUnits": [
+      "mL/(kg.min)",
+      "L/(kg.min)"
+    ],
+    "conversions": [
+      {
+        "inputUnit": "mL/(kg.min)",
+        "factor": 1,
+        "offset": 0,
+        "evidenceURL": "https://ucum.org/ucum"
+      },
+      {
+        "inputUnit": "L/(kg.min)",
+        "factor": 1000,
+        "offset": 0,
+        "evidenceURL": "https://ucum.org/ucum"
+      }
+    ],
+    "category": "exercise",
+    "requiredContext": [
+      "protocolId",
+      "method",
+      "resultBasis"
+    ],
+    "missingValueBehavior": "explicit_reason",
+    "provenanceRequirements": [
+      "source",
+      "rawRecordId",
+      "method"
+    ],
+    "comparabilityKeys": [
+      "astronautId",
+      "metric",
+      "unit",
+      "context",
+      "modality",
+      "deviceId",
+      "protocolId",
+      "method",
+      "posture",
+      "resultBasis"
+    ],
+    "regionAssociations": [],
+    "definitionStatus": "pending",
+    "definitionEvidence": [],
+    "displayPrecision": 2
+  },
+  "vo2max_relative": {
+    "schemaVersion": "0.1.0",
+    "namespace": "demo",
+    "recordType": "MetricDefinition",
+    "metric": "vo2max_relative",
+    "revision": 1,
+    "label": "vo2max relative",
+    "valueKinds": [
+      "number"
+    ],
+    "canonicalUnit": "mL/(kg.min)",
+    "allowedInputUnits": [
+      "mL/(kg.min)",
+      "L/(kg.min)"
+    ],
+    "conversions": [
+      {
+        "inputUnit": "mL/(kg.min)",
+        "factor": 1,
+        "offset": 0,
+        "evidenceURL": "https://ucum.org/ucum"
+      },
+      {
+        "inputUnit": "L/(kg.min)",
+        "factor": 1000,
+        "offset": 0,
+        "evidenceURL": "https://ucum.org/ucum"
+      }
+    ],
+    "category": "exercise",
+    "requiredContext": [
+      "protocolId",
+      "method",
+      "resultBasis"
+    ],
+    "missingValueBehavior": "explicit_reason",
+    "provenanceRequirements": [
+      "source",
+      "rawRecordId",
+      "method"
+    ],
+    "comparabilityKeys": [
+      "astronautId",
+      "metric",
+      "unit",
+      "context",
+      "modality",
+      "deviceId",
+      "protocolId",
+      "method",
+      "posture",
+      "resultBasis"
+    ],
+    "regionAssociations": [],
+    "definitionStatus": "pending",
+    "definitionEvidence": [],
+    "displayPrecision": 2
+  },
+  "vo2_absolute": {
+    "schemaVersion": "0.1.0",
+    "namespace": "demo",
+    "recordType": "MetricDefinition",
+    "metric": "vo2_absolute",
+    "revision": 1,
+    "label": "vo2 absolute",
+    "valueKinds": [
+      "number"
+    ],
+    "canonicalUnit": "L/min",
+    "allowedInputUnits": [
+      "L/min",
+      "mL/min"
+    ],
+    "conversions": [
+      {
+        "inputUnit": "L/min",
+        "factor": 1,
+        "offset": 0,
+        "evidenceURL": "https://ucum.org/ucum"
+      },
+      {
+        "inputUnit": "mL/min",
+        "factor": 0.001,
+        "offset": 0,
+        "evidenceURL": "https://ucum.org/ucum"
+      }
+    ],
+    "category": "exercise",
+    "requiredContext": [
+      "protocolId",
+      "method",
+      "resultBasis"
+    ],
+    "missingValueBehavior": "explicit_reason",
+    "provenanceRequirements": [
+      "source",
+      "rawRecordId",
+      "method"
+    ],
+    "comparabilityKeys": [
+      "astronautId",
+      "metric",
+      "unit",
+      "context",
+      "modality",
+      "deviceId",
+      "protocolId",
+      "method",
+      "posture",
+      "resultBasis"
+    ],
+    "regionAssociations": [],
+    "definitionStatus": "pending",
+    "definitionEvidence": [],
+    "displayPrecision": 2
+  },
+  "radiation_dose": {
+    "schemaVersion": "0.1.0",
+    "namespace": "demo",
+    "recordType": "MetricDefinition",
+    "metric": "radiation_dose",
+    "revision": 1,
+    "label": "radiation dose",
+    "valueKinds": [
+      "number"
+    ],
+    "canonicalUnit": "mSv",
+    "allowedInputUnits": [
+      "mSv",
+      "Sv"
+    ],
+    "conversions": [
+      {
+        "inputUnit": "mSv",
+        "factor": 1,
+        "offset": 0,
+        "evidenceURL": "https://ucum.org/ucum"
+      },
+      {
+        "inputUnit": "Sv",
+        "factor": 1000,
+        "offset": 0,
+        "evidenceURL": "https://ucum.org/ucum"
+      }
+    ],
+    "category": "additional",
+    "requiredContext": [
+      "doseQuantity",
+      "deviceId",
+      "site",
+      "intervalSeconds"
+    ],
+    "missingValueBehavior": "explicit_reason",
+    "provenanceRequirements": [
+      "source",
+      "rawRecordId",
+      "method"
+    ],
+    "comparabilityKeys": [
+      "astronautId",
+      "metric",
+      "unit",
+      "context",
+      "modality",
+      "deviceId",
+      "protocolId",
+      "method",
+      "posture",
+      "doseQuantity",
+      "site",
+      "intervalSeconds"
+    ],
+    "regionAssociations": [],
+    "definitionStatus": "pending",
+    "definitionEvidence": [],
+    "displayPrecision": 2
+  },
+  "radiation_dose_rate": {
+    "schemaVersion": "0.1.0",
+    "namespace": "demo",
+    "recordType": "MetricDefinition",
+    "metric": "radiation_dose_rate",
+    "revision": 1,
+    "label": "radiation dose rate",
+    "valueKinds": [
+      "number"
+    ],
+    "canonicalUnit": "mSv/h",
+    "allowedInputUnits": [
+      "mSv/h",
+      "Sv/h"
+    ],
+    "conversions": [
+      {
+        "inputUnit": "mSv/h",
+        "factor": 1,
+        "offset": 0,
+        "evidenceURL": "https://ucum.org/ucum"
+      },
+      {
+        "inputUnit": "Sv/h",
+        "factor": 1000,
+        "offset": 0,
+        "evidenceURL": "https://ucum.org/ucum"
+      }
+    ],
+    "category": "additional",
+    "requiredContext": [
+      "doseQuantity",
+      "deviceId",
+      "site",
+      "intervalSeconds"
+    ],
+    "missingValueBehavior": "explicit_reason",
+    "provenanceRequirements": [
+      "source",
+      "rawRecordId",
+      "method"
+    ],
+    "comparabilityKeys": [
+      "astronautId",
+      "metric",
+      "unit",
+      "context",
+      "modality",
+      "deviceId",
+      "protocolId",
+      "method",
+      "posture",
+      "doseQuantity",
+      "site",
+      "intervalSeconds"
+    ],
+    "regionAssociations": [],
+    "definitionStatus": "pending",
+    "definitionEvidence": [],
+    "displayPrecision": 2
+  },
+  "symptom_report": {
+    "schemaVersion": "0.1.0",
+    "namespace": "demo",
+    "recordType": "MetricDefinition",
+    "metric": "symptom_report",
+    "revision": 1,
+    "label": "symptom report",
+    "valueKinds": [
+      "structured"
+    ],
+    "canonicalUnit": null,
+    "allowedInputUnits": [],
+    "conversions": [],
+    "category": "additional",
+    "requiredContext": [
+      "site",
+      "laterality"
+    ],
+    "missingValueBehavior": "explicit_reason",
+    "provenanceRequirements": [
+      "source",
+      "rawRecordId",
+      "method"
+    ],
+    "comparabilityKeys": [
+      "astronautId",
+      "metric",
+      "unit",
+      "context",
+      "modality",
+      "deviceId",
+      "protocolId",
+      "method",
+      "posture",
+      "site",
+      "laterality"
+    ],
+    "regionAssociations": [],
+    "definitionStatus": "pending",
+    "definitionEvidence": [],
+    "displayPrecision": 2
+  },
+  "injury_report": {
+    "schemaVersion": "0.1.0",
+    "namespace": "demo",
+    "recordType": "MetricDefinition",
+    "metric": "injury_report",
+    "revision": 1,
+    "label": "injury report",
+    "valueKinds": [
+      "structured"
+    ],
+    "canonicalUnit": null,
+    "allowedInputUnits": [],
+    "conversions": [],
+    "category": "additional",
+    "requiredContext": [
+      "site",
+      "laterality"
+    ],
+    "missingValueBehavior": "explicit_reason",
+    "provenanceRequirements": [
+      "source",
+      "rawRecordId",
+      "method"
+    ],
+    "comparabilityKeys": [
+      "astronautId",
+      "metric",
+      "unit",
+      "context",
+      "modality",
+      "deviceId",
+      "protocolId",
+      "method",
+      "posture",
+      "site",
+      "laterality"
+    ],
+    "regionAssociations": [],
+    "definitionStatus": "pending",
+    "definitionEvidence": [],
+    "displayPrecision": 2
+  },
+  "cabin_co2": {
+    "schemaVersion": "0.1.0",
+    "namespace": "demo",
+    "recordType": "MetricDefinition",
+    "metric": "cabin_co2",
+    "revision": 1,
+    "label": "cabin co2",
+    "valueKinds": [
+      "number"
+    ],
+    "canonicalUnit": "[ppm]",
+    "allowedInputUnits": [
+      "[ppm]"
+    ],
+    "conversions": [
+      {
+        "inputUnit": "[ppm]",
+        "factor": 1,
+        "offset": 0,
+        "evidenceURL": "https://ucum.org/ucum"
+      }
+    ],
+    "category": "environment",
+    "requiredContext": [
+      "deviceId",
+      "intervalSeconds"
+    ],
+    "missingValueBehavior": "explicit_reason",
+    "provenanceRequirements": [
+      "source",
+      "rawRecordId",
+      "method"
+    ],
+    "comparabilityKeys": [
+      "astronautId",
+      "metric",
+      "unit",
+      "context",
+      "modality",
+      "deviceId",
+      "protocolId",
+      "method",
+      "posture",
+      "intervalSeconds"
+    ],
+    "regionAssociations": [],
+    "definitionStatus": "pending",
+    "definitionEvidence": [],
+    "displayPrecision": 2
+  },
+  "cabin_o2": {
+    "schemaVersion": "0.1.0",
+    "namespace": "demo",
+    "recordType": "MetricDefinition",
+    "metric": "cabin_o2",
+    "revision": 1,
+    "label": "cabin o2",
+    "valueKinds": [
+      "number"
+    ],
+    "canonicalUnit": "%",
+    "allowedInputUnits": [
+      "%"
+    ],
+    "conversions": [
+      {
+        "inputUnit": "%",
+        "factor": 1,
+        "offset": 0,
+        "evidenceURL": "https://ucum.org/ucum"
+      }
+    ],
+    "category": "environment",
+    "requiredContext": [
+      "deviceId",
+      "intervalSeconds"
+    ],
+    "missingValueBehavior": "explicit_reason",
+    "provenanceRequirements": [
+      "source",
+      "rawRecordId",
+      "method"
+    ],
+    "comparabilityKeys": [
+      "astronautId",
+      "metric",
+      "unit",
+      "context",
+      "modality",
+      "deviceId",
+      "protocolId",
+      "method",
+      "posture",
+      "intervalSeconds"
+    ],
+    "regionAssociations": [],
+    "definitionStatus": "pending",
+    "definitionEvidence": [],
+    "displayPrecision": 2
+  },
+  "cabin_temperature": {
+    "schemaVersion": "0.1.0",
+    "namespace": "demo",
+    "recordType": "MetricDefinition",
+    "metric": "cabin_temperature",
+    "revision": 1,
+    "label": "cabin temperature",
+    "valueKinds": [
+      "number"
+    ],
+    "canonicalUnit": "Cel",
+    "allowedInputUnits": [
+      "Cel"
+    ],
+    "conversions": [
+      {
+        "inputUnit": "Cel",
+        "factor": 1,
+        "offset": 0,
+        "evidenceURL": "https://ucum.org/ucum"
+      }
+    ],
+    "category": "environment",
+    "requiredContext": [
+      "deviceId",
+      "intervalSeconds"
+    ],
+    "missingValueBehavior": "explicit_reason",
+    "provenanceRequirements": [
+      "source",
+      "rawRecordId",
+      "method"
+    ],
+    "comparabilityKeys": [
+      "astronautId",
+      "metric",
+      "unit",
+      "context",
+      "modality",
+      "deviceId",
+      "protocolId",
+      "method",
+      "posture",
+      "intervalSeconds"
+    ],
+    "regionAssociations": [],
+    "definitionStatus": "pending",
+    "definitionEvidence": [],
+    "displayPrecision": 2
+  },
+  "cabin_pressure": {
+    "schemaVersion": "0.1.0",
+    "namespace": "demo",
+    "recordType": "MetricDefinition",
+    "metric": "cabin_pressure",
+    "revision": 1,
+    "label": "cabin pressure",
+    "valueKinds": [
+      "number"
+    ],
+    "canonicalUnit": "kPa",
+    "allowedInputUnits": [
+      "kPa",
+      "Pa"
+    ],
+    "conversions": [
+      {
+        "inputUnit": "kPa",
+        "factor": 1,
+        "offset": 0,
+        "evidenceURL": "https://ucum.org/ucum"
+      },
+      {
+        "inputUnit": "Pa",
+        "factor": 0.001,
+        "offset": 0,
+        "evidenceURL": "https://ucum.org/ucum"
+      }
+    ],
+    "category": "environment",
+    "requiredContext": [
+      "deviceId",
+      "intervalSeconds"
+    ],
+    "missingValueBehavior": "explicit_reason",
+    "provenanceRequirements": [
+      "source",
+      "rawRecordId",
+      "method"
+    ],
+    "comparabilityKeys": [
+      "astronautId",
+      "metric",
+      "unit",
+      "context",
+      "modality",
+      "deviceId",
+      "protocolId",
+      "method",
+      "posture",
+      "intervalSeconds"
+    ],
+    "regionAssociations": [],
+    "definitionStatus": "pending",
+    "definitionEvidence": [],
+    "displayPrecision": 2
+  },
+  "radiation_absorbed_dose": {
+    "schemaVersion": "0.1.0",
+    "namespace": "demo",
+    "recordType": "MetricDefinition",
+    "metric": "radiation_absorbed_dose",
+    "revision": 1,
+    "label": "radiation absorbed dose",
+    "valueKinds": [
+      "number"
+    ],
+    "canonicalUnit": "mGy",
+    "allowedInputUnits": [
+      "mGy",
+      "Gy"
+    ],
+    "conversions": [
+      {
+        "inputUnit": "mGy",
+        "factor": 1,
+        "offset": 0,
+        "evidenceURL": "https://ucum.org/ucum"
+      },
+      {
+        "inputUnit": "Gy",
+        "factor": 1000,
+        "offset": 0,
+        "evidenceURL": "https://ucum.org/ucum"
+      }
+    ],
+    "category": "environment",
+    "requiredContext": [
+      "doseQuantity",
+      "deviceId",
+      "site",
+      "intervalSeconds"
+    ],
+    "missingValueBehavior": "explicit_reason",
+    "provenanceRequirements": [
+      "source",
+      "rawRecordId",
+      "method"
+    ],
+    "comparabilityKeys": [
+      "astronautId",
+      "metric",
+      "unit",
+      "context",
+      "modality",
+      "deviceId",
+      "protocolId",
+      "method",
+      "posture",
+      "doseQuantity",
+      "site",
+      "intervalSeconds"
+    ],
+    "regionAssociations": [],
+    "definitionStatus": "pending",
+    "definitionEvidence": [],
+    "displayPrecision": 2
+  },
+  "radiation_absorbed_dose_rate": {
+    "schemaVersion": "0.1.0",
+    "namespace": "demo",
+    "recordType": "MetricDefinition",
+    "metric": "radiation_absorbed_dose_rate",
+    "revision": 1,
+    "label": "radiation absorbed dose rate",
+    "valueKinds": [
+      "number"
+    ],
+    "canonicalUnit": "mGy/h",
+    "allowedInputUnits": [
+      "mGy/h",
+      "Gy/h"
+    ],
+    "conversions": [
+      {
+        "inputUnit": "mGy/h",
+        "factor": 1,
+        "offset": 0,
+        "evidenceURL": "https://ucum.org/ucum"
+      },
+      {
+        "inputUnit": "Gy/h",
+        "factor": 1000,
+        "offset": 0,
+        "evidenceURL": "https://ucum.org/ucum"
+      }
+    ],
+    "category": "environment",
+    "requiredContext": [
+      "doseQuantity",
+      "deviceId",
+      "site",
+      "intervalSeconds"
+    ],
+    "missingValueBehavior": "explicit_reason",
+    "provenanceRequirements": [
+      "source",
+      "rawRecordId",
+      "method"
+    ],
+    "comparabilityKeys": [
+      "astronautId",
+      "metric",
+      "unit",
+      "context",
+      "modality",
+      "deviceId",
+      "protocolId",
+      "method",
+      "posture",
+      "doseQuantity",
+      "site",
+      "intervalSeconds"
+    ],
+    "regionAssociations": [],
+    "definitionStatus": "pending",
+    "definitionEvidence": [],
+    "displayPrecision": 2
+  },
+  "cabin_co2_partial_pressure": {
+    "schemaVersion": "0.1.0",
+    "namespace": "demo",
+    "recordType": "MetricDefinition",
+    "metric": "cabin_co2_partial_pressure",
+    "revision": 1,
+    "label": "cabin co2 partial pressure",
+    "valueKinds": [
+      "number"
+    ],
+    "canonicalUnit": "kPa",
+    "allowedInputUnits": [
+      "kPa",
+      "Pa"
+    ],
+    "conversions": [
+      {
+        "inputUnit": "kPa",
+        "factor": 1,
+        "offset": 0,
+        "evidenceURL": "https://ucum.org/ucum"
+      },
+      {
+        "inputUnit": "Pa",
+        "factor": 0.001,
+        "offset": 0,
+        "evidenceURL": "https://ucum.org/ucum"
+      }
+    ],
+    "category": "environment",
+    "requiredContext": [
+      "deviceId",
+      "intervalSeconds"
+    ],
+    "missingValueBehavior": "explicit_reason",
+    "provenanceRequirements": [
+      "source",
+      "rawRecordId",
+      "method"
+    ],
+    "comparabilityKeys": [
+      "astronautId",
+      "metric",
+      "unit",
+      "context",
+      "modality",
+      "deviceId",
+      "protocolId",
+      "method",
+      "posture",
+      "intervalSeconds"
+    ],
+    "regionAssociations": [],
+    "definitionStatus": "pending",
+    "definitionEvidence": [],
+    "displayPrecision": 2
+  },
+  "cabin_o2_partial_pressure": {
+    "schemaVersion": "0.1.0",
+    "namespace": "demo",
+    "recordType": "MetricDefinition",
+    "metric": "cabin_o2_partial_pressure",
+    "revision": 1,
+    "label": "cabin o2 partial pressure",
+    "valueKinds": [
+      "number"
+    ],
+    "canonicalUnit": "kPa",
+    "allowedInputUnits": [
+      "kPa",
+      "Pa"
+    ],
+    "conversions": [
+      {
+        "inputUnit": "kPa",
+        "factor": 1,
+        "offset": 0,
+        "evidenceURL": "https://ucum.org/ucum"
+      },
+      {
+        "inputUnit": "Pa",
+        "factor": 0.001,
+        "offset": 0,
+        "evidenceURL": "https://ucum.org/ucum"
+      }
+    ],
+    "category": "environment",
+    "requiredContext": [
+      "deviceId",
+      "intervalSeconds"
+    ],
+    "missingValueBehavior": "explicit_reason",
+    "provenanceRequirements": [
+      "source",
+      "rawRecordId",
+      "method"
+    ],
+    "comparabilityKeys": [
+      "astronautId",
+      "metric",
+      "unit",
+      "context",
+      "modality",
+      "deviceId",
+      "protocolId",
+      "method",
+      "posture",
+      "intervalSeconds"
+    ],
+    "regionAssociations": [],
+    "definitionStatus": "pending",
+    "definitionEvidence": [],
+    "displayPrecision": 2
+  }
+}

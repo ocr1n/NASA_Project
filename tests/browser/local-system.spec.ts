@@ -1,0 +1,26 @@
+import {test,expect} from '@playwright/test';
+import {show} from './nav.helpers';
+test('local reports, saved reference, trends, workflow and actual three-layer anatomy work together offline',async({page})=>{
+ test.setTimeout(120000);const errors:string[]=[];page.on('pageerror',e=>errors.push(e.message));page.on('console',m=>{if(m.type()==='error')errors.push(m.text());});
+ await page.goto('/');await expect(page.getByRole('heading',{name:'Aster',exact:true})).toBeVisible();
+ await show(page,'Atlas');
+ const atlas=page.locator('#atlas');await expect(atlas.locator('.atlas-canvas')).toHaveAttribute('data-loaded','true',{timeout:60000});
+ await atlas.getByRole('button',{name:'Heart',exact:true}).click();await expect(atlas.locator('.atlas-evidence h3')).toHaveText('Heart');await atlas.getByRole('button',{name:'Isolate selected',exact:true}).click();
+ await atlas.getByRole('button',{name:'Left femur',exact:true}).click();await expect(atlas.locator('.atlas-evidence h3')).toHaveText('Left femur');
+ await atlas.getByRole('button',{name:'Left biceps brachii',exact:true}).click();await expect(atlas.locator('.atlas-evidence h3')).toHaveText('Left biceps brachii');
+ await atlas.getByLabel('Muscular',{exact:true}).check();await atlas.getByLabel('skeletal opacity',{exact:true}).press('Home');await atlas.getByLabel('skeletal opacity',{exact:true}).press('ArrowRight');await atlas.getByRole('button',{name:'Reset view',exact:true}).click();
+ await show(page,'Reports');
+ const report=page.locator('#ultrasound');await report.getByRole('button',{name:'Preview fictional echo example'}).click();await expect(report.getByRole('status')).toContainText('Preview ready');await report.getByRole('button',{name:'Save numerical report',exact:true}).click();await expect(report.getByText('Numerical report saved. Interpretation unavailable.',{exact:true})).toBeVisible();
+ await show(page,'Trends');
+ const baseline=page.getByRole('region',{name:'Computed personal references',exact:true});await baseline.getByLabel('Reason for saving reference',{exact:true}).fill('Local prototype reference');await baseline.getByRole('button',{name:'Save reference',exact:true}).click();await expect(baseline.getByRole('status').filter({hasText:'Reference saved'})).toBeVisible();
+ const overview=page.locator('#overview');await expect(overview.getByLabel('Trend personal reference').locator('option')).toHaveCount(2);const ref=(await overview.getByLabel('Trend personal reference').locator('option').nth(1).getAttribute('value'))!;await overview.getByLabel('Trend personal reference').selectOption(ref);await expect(overview.getByRole('img')).toBeVisible();await overview.getByText('Trend values and evidence (4)',{exact:true}).click();await expect(overview.getByRole('table',{name:'Trend evidence'})).toContainText('Project-authored fictional scenario');
+ await show(page,'Findings');
+ const workflow=page.locator('#workflow');await workflow.getByLabel('Workflow personal reference').selectOption(ref);await expect(workflow.getByRole('heading',{name:'Fictional sustained deviation'})).toBeVisible();await workflow.getByRole('button',{name:'Retain demo evaluation'}).click();await expect(workflow.getByRole('status')).toContainText('Evaluation retained');
+ await page.getByLabel('Choose crew',{exact:true}).selectOption('crew-b');await expect(page.getByRole('heading',{name:'Vega',exact:true})).toBeVisible();await show(page,'Atlas');await expect(page.locator('#atlas .atlas-evidence h3')).toHaveText('No structure selected');
+ await show(page,'Reports');await expect(page.locator('#ultrasound')).not.toContainText('Numerical report saved.');
+ await page.getByLabel('Choose crew',{exact:true}).selectOption('crew-a');await show(page,'Atlas');await expect(page.locator('#atlas .atlas-evidence h3')).toHaveText('Left biceps brachii');await expect(page.locator('#overview')).toHaveCount(1);await expect(page.locator('#ultrasound')).toHaveCount(1);
+ await page.locator('#atlas').getByRole('button',{name:'Reset view',exact:true}).click();await page.setViewportSize({width:1365,height:1000});await show(page,'Trends');await page.locator('#overview').scrollIntoViewIfNeeded();await page.screenshot({path:'docs/evidence/local-system-desktop.png',fullPage:false});
+ const performance=await page.locator('#atlas .atlas-canvas').evaluate(el=>({drawCalls:el.getAttribute('data-draw-calls'),triangles:el.getAttribute('data-triangles')}));console.log('Atlas measured rendering',JSON.stringify(performance));
+ await page.setViewportSize({width:390,height:844});await show(page,'Atlas');await page.locator('#atlas').scrollIntoViewIfNeeded();expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);await page.screenshot({path:'docs/evidence/local-system-mobile.png'});
+ await expect(page.getByText('Available offline after installation',{exact:true})).toBeVisible({timeout:60000});await page.context().setOffline(true);await page.reload();await show(page,'Atlas');await expect(page.locator('#atlas .atlas-canvas')).toHaveAttribute('data-loaded','true',{timeout:60000});await show(page,'Reports');await expect(page.locator('#ultrasound').getByRole('heading',{name:/Saved echo and muscle reports \(5\)/})).toBeVisible();expect(errors).toEqual([]);
+});

@@ -1,0 +1,44 @@
+{
+  "protocolVersion": "atlas-demo-input/1",
+  "crewId": "crew-a",
+  "scenarioId": "muscle-change",
+  "title": "Muscle: reported left biceps change",
+  "description": "Fictional ultrasound thickness reports show a change at the reported left biceps site. Confirm site, side and acquisition. Repeated demo reports can complete a task before the finding recovers.",
+  "kind": "muscle",
+  "initialCount": 2,
+  "reference": [
+    24.8,
+    25,
+    25.2
+  ],
+  "readings": [
+    {
+      "timestamp": "2026-01-10T13:00:00Z",
+      "value": 21,
+      "qualityScore": 0.95,
+      "lowConfidence": false,
+      "site": "biceps_brachii_left"
+    },
+    {
+      "timestamp": "2026-01-11T13:00:00Z",
+      "value": 20.5,
+      "qualityScore": 0.95,
+      "lowConfidence": false,
+      "site": "biceps_brachii_left"
+    },
+    {
+      "timestamp": "2026-01-11T14:00:00Z",
+      "value": 24.5,
+      "qualityScore": 0.95,
+      "lowConfidence": false,
+      "site": "biceps_brachii_left"
+    },
+    {
+      "timestamp": "2026-01-11T15:00:00Z",
+      "value": 25,
+      "qualityScore": 0.95,
+      "lowConfidence": false,
+      "site": "biceps_brachii_left"
+    }
+  ]
+}

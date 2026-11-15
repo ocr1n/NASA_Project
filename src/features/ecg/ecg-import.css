@@ -1,0 +1,28 @@
+.ecg-import-panel{padding-bottom:16px;font-size:12px}
+.ecg-import-panel>p{margin:12px 18px;font-size:12px;color:var(--muted)}
+.ecg-import-panel fieldset{border:1px solid var(--hair);border-radius:var(--radius);padding:14px;min-width:0;margin:12px 18px}
+.ecg-import-panel legend{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--dim);padding:0 4px}
+.ecg-import-panel label{display:flex;flex-direction:column;gap:4px;font-size:11px;color:var(--muted);min-width:0}
+.ecg-import-panel select{max-width:30rem}
+.ecg-import-actions{display:flex;flex-wrap:wrap;gap:8px;margin:0 18px 12px}
+.ecg-import-actions button:first-child{background:var(--ink);border-color:var(--ink);color:#fff;font-weight:500}
+.ecg-import-panel details{padding:12px 18px;border:0;border-top:1px solid var(--hair);border-radius:0}
+.ecg-import-files{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:10px}
+.ecg-import-files input{width:100%;min-width:0}
+.ecg-import-preview,.ecg-import-retained{margin:0 18px}
+.ecg-import-preview article,.ecg-import-retained article{border-top:1px solid var(--hair);padding:12px 0}
+.ecg-import-row{display:flex;align-items:center;flex-wrap:wrap;gap:14px}
+.ecg-import-row label{flex-direction:row;align-items:center;color:var(--ink)}
+.ecg-import-row input{width:14px;height:14px}
+.ecg-import-row span{margin-left:auto;color:var(--dim);font-size:11px}
+.ecg-import-preview dl div{align-items:baseline;gap:16px;border-bottom:1px solid var(--hair)}
+.ecg-import-preview dd{flex:1;max-width:45rem;font-size:12px}
+.ecg-import-panel small{display:block;color:var(--dim);font-weight:400;font-size:11px}
+.ecg-import-columns{overflow-wrap:anywhere;max-height:12rem;overflow:auto;font-size:11px;color:var(--dim)}
+.ecg-import-panel h3{font-size:13px;margin:8px 0 4px}
+.ecg-import-retained li{margin:6px 0;overflow-wrap:anywhere;color:var(--muted);font-size:12px}
+.ecg-import-footnote{margin:12px 18px 0;font-size:11px;color:var(--dim)}
+.ecg-import-error{padding:10px 12px;margin:0 18px 8px;background:#fdf3f2;border:1px solid #ecdbd9;color:var(--danger);font-size:12px}
+.ecg-import-notice{padding:10px 12px;margin:0 18px 8px;background:var(--accent-soft);border:1px solid var(--accent-line);color:var(--accent);font-size:12px}
+.ecg-import-panel input{caret-color:var(--accent)}
+@media(max-width:700px){.ecg-import-files{grid-template-columns:1fr}.ecg-import-panel fieldset{margin:12px 14px}.ecg-import-preview,.ecg-import-retained{margin:0 14px}}

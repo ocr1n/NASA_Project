@@ -1,0 +1,44 @@
+{
+  "protocolVersion": "atlas-demo-input/1",
+  "crewId": "crew-a",
+  "scenarioId": "systemic-change",
+  "title": "Heart rate: systemic, no organ highlight",
+  "description": "Repeated fictional resting heart-rate changes produce a systemic finding and repeat prompt. Generic heart rate cannot identify an injured heart or another organ.",
+  "kind": "systemic",
+  "initialCount": 2,
+  "reference": [
+    60,
+    62,
+    64
+  ],
+  "readings": [
+    {
+      "timestamp": "2026-01-10T13:00:00Z",
+      "value": 72,
+      "qualityScore": 0.95,
+      "lowConfidence": false,
+      "site": null
+    },
+    {
+      "timestamp": "2026-01-11T13:00:00Z",
+      "value": 73,
+      "qualityScore": 0.95,
+      "lowConfidence": false,
+      "site": null
+    },
+    {
+      "timestamp": "2026-01-11T14:00:00Z",
+      "value": 63,
+      "qualityScore": 0.95,
+      "lowConfidence": false,
+      "site": null
+    },
+    {
+      "timestamp": "2026-01-11T15:00:00Z",
+      "value": 62,
+      "qualityScore": 0.95,
+      "lowConfidence": false,
+      "site": null
+    }
+  ]
+}

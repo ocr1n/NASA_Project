@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.scratch/
+test-results/
+playwright-report/
+docs/evidence/
+*.tsbuildinfo
+.env
+.env.*
+!.env.example
+*.log
+*.pem
+*.key
+.DS_Store
+Thumbs.db

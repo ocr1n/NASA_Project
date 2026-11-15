@@ -1,0 +1,23 @@
+* text=auto
+*.md text eol=lf
+*.txt text eol=lf
+*.ts text eol=lf
+*.tsx text eol=lf
+*.mjs text eol=lf
+*.json text eol=lf
+*.css text eol=lf
+*.ps1 text eol=crlf
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.docx binary
+# Preserve pinned payloads, including upstream CRLF/whitespace, across clones.
+src/shared/sources/fixtures/*.csv -text -whitespace
+src/shared/sources/fixtures/osd575*.json -text -whitespace
+src/shared/sources/fixtures/LICENSE-PTB.txt -text -whitespace
+src/shared/capture/fixtures/*.csv -text
+
+# Keep redistributed, hash-pinned assets byte-exact on every platform.
+public/atlas/* -text -whitespace
+DEMO_ECG_UPLOAD/*.csv -text -whitespace
+DEMO_ECG_UPLOAD/LICENSE-PTB.txt -text -whitespace

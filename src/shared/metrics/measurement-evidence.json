@@ -1,0 +1,19 @@
+{
+  "version": "measurement-evidence/03.1",
+  "reviewedOn": "2026-11-15",
+  "glucoseConversion": {
+    "analyte": "glucose",
+    "inputUnit": "mmol/L",
+    "canonicalUnit": "mg/dL",
+    "factor": 18.02,
+    "factorDecimalPlaces": 2,
+    "claim": "Glucose-specific unit transformation only; no clinical range or individual sample validation",
+    "nasaSearch": "Bounded nasa.gov glucose mmol/L mg/dL conversion search and existing OSD-575 context review did not establish a NASA conversion definition",
+    "fallbackReason": "Use primary laboratory/metrology unit evidence for this chemical transformation; no replacement astronaut dataset",
+    "sources": [
+      {"name":"CDC NHANES 2015-2016 plasma glucose procedure", "url":"https://wwwn.cdc.gov/nchs/data/nhanes/public/2015/labmethods/GLU_I_MET_C501.pdf", "location":"Printed page 12, section J Calculation", "factor":18.02, "lineage":"missouri-nhanes-laboratory", "rights":"Factual conversion paraphrase and citation only; no PDF redistribution"},
+      {"name":"NIST Chemistry WebBook SRD 69 glucose", "url":"https://webbook.nist.gov/cgi/cbook.cgi?ID=C50-99-7", "location":"Formula and molecular weight", "molecularWeight":180.1559, "lineage":"nist-metrology", "rights":"Attributed single factual constant and dimensional derivation; no database redistribution"},
+      {"name":"NIDDK Diabetes in America third edition Appendix 1", "url":"https://www.niddk.nih.gov/-/media/Files/Strategic-Plans/Diabetes-in-America-3rd-Edition/DIA_Conversions.pdf", "location":"Conversions-2 glucose table and formula", "inverseFactor":0.0555, "lineage":"niddk-conversion-reference", "rights":"Factual conversion paraphrase and citation only; no PDF redistribution"}
+    ]
+  }
+}

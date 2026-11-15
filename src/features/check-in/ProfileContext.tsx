@@ -1,0 +1,8 @@
+import type {CrewSnapshot} from '../../shared/view-models';
+import {metricRegistry} from '../../shared/metrics';
+export function ProfileContext({snapshot:s}:{snapshot:CrewSnapshot}){
+ const authored=s.baselines.filter(b=>b.algorithmVersion==='fixture-precomputed-1');
+ const fixed=authored.filter(b=>b.method!=='mission_rolling'&&b.status==='available'),rolling=authored.filter(b=>b.method==='mission_rolling'&&b.status==='available');
+ const context=[s.crew?.bodyHeightObservationId,s.crew?.bodyMassObservationId].flatMap(id=>id?s.observations.filter(o=>o.observationId===id):[]);
+ return <section className="profile-context" aria-labelledby="reference-heading"><h2 id="reference-heading">Personal reference context</h2><p>{fixed.length?'Fixed preflight references are retained.':'Preflight reference unavailable for this crew.'} Rolling references remain separate; saving does not create a baseline.</p><details><summary>Inspect saved references and profile context</summary><ul>{[...fixed,...rolling].map(b=><li key={b.baselineId}>{metricRegistry[b.metric].label}: {b.center} {b.unit} · {b.method==='mission_rolling'?'Separate rolling reference':b.method==='preflight_anchor'?'Dated exam anchor':'Fixed preflight median'} · {b.sampleCount} samples · Fictional</li>)}{context.map(o=><li key={o.observationId}>{metricRegistry[o.metric].label}: {String(o.value)} {o.unit} · {o.originalTime??o.timestamp??'Date unknown'} · {o.measurementContext.method??'Method unknown'}</li>)}</ul>{!context.length&&<p>No height or mass context supplied. Anatomy remains a reference model.</p>}</details></section>;
+}

@@ -1,0 +1,37 @@
+{
+  "protocolVersion": "atlas-demo-input/1",
+  "crewId": "crew-a",
+  "scenarioId": "bone-single-reading",
+  "title": "Bone: one reading is a watch, not an alarm",
+  "description": "A single fictional change stays in watch/status and produces a repeat prompt. A lone sample cannot supply persistence or an automatic atlas highlight.",
+  "kind": "bone",
+  "initialCount": 1,
+  "reference": [
+    1.1,
+    1.11,
+    1.12
+  ],
+  "readings": [
+    {
+      "timestamp": "2026-01-10T13:00:00Z",
+      "value": 0.93,
+      "qualityScore": 0.95,
+      "lowConfidence": false,
+      "site": "femur_left"
+    },
+    {
+      "timestamp": "2026-01-11T13:00:00Z",
+      "value": 1.1,
+      "qualityScore": 0.95,
+      "lowConfidence": false,
+      "site": "femur_left"
+    },
+    {
+      "timestamp": "2026-01-11T14:00:00Z",
+      "value": 1.11,
+      "qualityScore": 0.95,
+      "lowConfidence": false,
+      "site": "femur_left"
+    }
+  ]
+}

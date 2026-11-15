@@ -1,0 +1,43 @@
+{
+  "name": "orbital-astronaut-health",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "engines": {
+    "node": ">=24.20.0 <25"
+  },
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "preview": "vite preview --host 127.0.0.1 --port 4173 --strictPort",
+    "generate": "node scripts/build-schema.mjs && node scripts/generate-types.mjs",
+    "check:generated": "node scripts/build-schema.mjs --check && node scripts/generate-types.mjs --check",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "build": "npm run check:generated && npm run typecheck && vite build && node scripts/build-notices.mjs && node scripts/build-offline.mjs",
+    "test:browser": "playwright test",
+    "docs:dictionary": "node scripts/data-dictionary.mjs",
+    "sources:verify": "node scripts/acquire-sources.mjs && vitest run tests/sources.test.ts",
+    "sources:refresh": "node scripts/acquire-sources.mjs --refresh"
+  },
+  "dependencies": {
+    "ajv": "8.20.0",
+    "ajv-formats": "3.0.1",
+    "dexie": "4.4.7",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "three": "0.187.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.65.1",
+    "@types/node": "26.6.6",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@types/three": "0.187.0",
+    "@vitejs/plugin-react": "6.3.0",
+    "fake-indexeddb": "6.2.8",
+    "json-schema-to-typescript": "16.0.0",
+    "typescript": "7.0.2",
+    "vite": "8.3.8",
+    "vitest": "5.1.0"
+  }
+}
